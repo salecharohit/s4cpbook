@@ -12,16 +12,16 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+      <img src="/img/s4cp.png" alt="" width="25%" height="auto" />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            <div className={styles.button}>
+              Start Securing your Software Product 🔒
+            </div>
           </Link>
         </div>
-      </div>
     </header>
   );
 }

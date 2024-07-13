@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Securing 4 Cs of a Software Product',
+  tagline: 'Practical Product Security by @salecharohit',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'salecharohit', // Usually your GitHub org/user name.
+  projectName: 's4cpbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/salecharohit/s4cpbook/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/salecharohit/s4cpbook/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/s4cp_computer.png',
       navbar: {
-        title: 'My Site',
+        title: 'S4CP',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'S4CP',
+          src: 'img/s4cp.svg',
         },
         items: [
           {
@@ -78,58 +78,49 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/salecharohit/s4cpbook/tree/main/docs',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },      
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            label: 'Docs',
+            to: '/docs/intro',
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            label: 'GitHub',
+            to: 'https://github.com/salecharohit',
           },
           {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
+            label: 'Twitter',
+            to: 'https://x.com/salecharohit',
+          },
+          {
+            label: 'Stack Overflow',
+            to: 'https://stackoverflow.com/users/1679541/rohit-salecha',
+          },
+          {
+            label: 'Linkedin',
+            to: 'https://www.linkedin.com/in/rohitsalecha/',
+          },
+          {
+            label: 'Logo by Flaticon',
+            to: 'https://www.flaticon.com/free-icons/shipping-and-delivery',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()
+        } - <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha</a > `,
       },
       prism: {
         theme: prismThemes.github,

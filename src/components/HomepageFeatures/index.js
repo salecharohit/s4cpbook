@@ -4,18 +4,8 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Code',
+    Svg: require('@site/static/img/code.svg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -24,8 +14,28 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Container',
+    Svg: require('@site/static/img/docker.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+  {
+    title: 'Cluster',
+    Svg: require('@site/static/img/kubernetes.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+  {
+    title: 'Cloud',
+    Svg: require('@site/static/img/aws.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -37,7 +47,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col-4 col')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -53,6 +63,10 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+      <h2 className={clsx('margin-bottom--lg', 'text--center')}>
+        The 4 C's of a Software Product 🤩
+        </h2>
+        <br />        
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
