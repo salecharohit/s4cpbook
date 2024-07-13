@@ -72,20 +72,18 @@ const config = {
           src: 'img/s4cp.svg',
         },
         items: [
+          { to: '/docs/intro', position: 'right', label: '📖 Docs' },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cpbook", position: 'right', label: '❤️ Tweet'
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/salecharohit/s4cpbook/tree/main/docs',
-            label: 'GitHub',
+            to: 'https://github.com/salecharohit/s4cpbook',
             position: 'right',
+            label: '🌟 GitHub',
           },
         ],
       },
+      metadata: [{ name: 'keywords', content: 'Product Security, Kubernetes Security, Docker Security, Cloud Native Security, Pentesting, DevSecOps, AWS IAM, AWS EKS Security, Kubernetes RBAC, Container Security, Open Source Security, Cloud Security, DevOps Security, Security Compliance, GitHub Actions Security, SAST, SCA, Compliance as Code, Secrets Management, OPA, Kyverno, Trivy, Gitleaks, AWS SCPs, Golden Containers, IRSA, Dependency Checker', }],     
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
