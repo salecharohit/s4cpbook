@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'salecharohit', // Usually your GitHub org/user name.
-  projectName: 's4cpbook', // Usually your repo name.
+  projectName: 's4cp', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/salecharohit/s4cpbook/',
+            'https://github.com/salecharohit/s4cp/',
         },
         blog: false,
         theme: {
@@ -68,10 +68,10 @@ const config = {
         items: [
           { to: '/docs/intro', position: 'right', label: '📖 Docs' },
           {
-            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cpbook", position: 'right', label: '❤️ Tweet'
+            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cp", position: 'right', label: '❤️ Tweet'
           },
           {
-            to: 'https://github.com/salecharohit/s4cpbook',
+            to: 'https://github.com/salecharohit/s4cp',
             position: 'right',
             label: '🌟 GitHub',
           },
