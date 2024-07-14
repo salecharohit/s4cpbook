@@ -112,7 +112,7 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()
-        } - <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha</a > `,
+        } - <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha.</a> Built with Docusaurus. `,
       },
       prism: {
         theme: prismThemes.github,
