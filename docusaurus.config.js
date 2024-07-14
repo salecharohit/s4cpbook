@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Securing 4 Cs of a Software Product',
+  title: "Securing 4 C's of a Software Product",
   tagline: 'Practical Product Security by @salecharohit',
   favicon: 'img/favicon.ico',
 
@@ -60,9 +60,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/s4cp_computer.png',
       navbar: {
-        title: 'S4CP',
+        title: "Securing 4 C's of a Software Product",
         logo: {
-          alt: 'S4CP',
+          alt: 'Securing 4 Cs of a Software Product',
           src: 'img/s4cp.svg',
         },
         items: [
