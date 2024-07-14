@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/code.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        🔍 Implement SAST and secrets scanning with Semgrep, Dependency-Checker, and GitLeaks. ⚙️ Integrate them into the CI/CD pipeline with GitHub Actions for continuous security checks. 🚀🔒
       </>
     ),
   },
@@ -18,8 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/docker.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        🚀 Set up AWS ECR and IAM Role for service account access. 🔐 Understand and validate Dockerfile security best practices with Semgrep. 🛠️ Build and scan secure Docker images with Trivy via GitHub Actions. 🔍🐋
       </>
     ),
   },
@@ -28,8 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/kubernetes.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        🔒 Enforce Kubernetes RBAC for secure access. 🔑 Manage and encrypt secrets with AWS Secrets Manager and KMS. 🛡️ Implement runtime security with Kyverno. 📡 Restrict pod communications with Calico network policies. 🌐
       </>
     ),
   },
@@ -38,8 +35,7 @@ const FeatureList = [
     Svg: require('@site/static/img/aws.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        🔒 Enforce encryption and permissions for AWS resources with SCPs. 🛡️ Secure Terraform runtime with OPA. 👥 Implement AWS IAM with Organizations for centralized access control. 🌐🔐
       </>
     ),
   },
