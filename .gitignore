@@ -1,5 +1,5 @@
 # Dependencies
-/node_modules
+book/node_modules
 
 # Production
 /build
