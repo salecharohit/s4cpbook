@@ -6,10 +6,6 @@ Use this file to store your notes,ids and temporary strings that will be needed 
 
 Global S3 Bucket : 
 Global DynamodDB :
-Prod Bucket :
-Prod DynamodDB :
-Dev Bucket :
-Dev DynamodDB :
 
 ## Account IDs
 
@@ -21,23 +17,12 @@ Prod : <prod-account-id>
 
 ## Users and Passwords
 
-### Terraform
-
-AWS_ACCESS_KEY_ID : 
-AWS_SECRET_ACCESS_KEY : 
-
-Roles Assigned
-    Dev Account  : arn:aws:iam::<dev-account-id>:role/AssumeRoleAdminWithoutMFAdev
-    Prod Account : arn:aws:iam::<prod-account-id>:role/AssumeRoleAdminWithoutMFAprod
-
 ### Goku
 
 AWS_ACCESS_KEY_ID : 
 AWS_SECRET_ACCESS_KEY : 
 
 Roles Assigned
-    Dev Account  : arn:aws:iam::<dev-account-id>:role/AssumeRoleAdminWithMFAdev
-    Prod Account : arn:aws:iam::<prod-account-id>:role/AssumeRoleAdminWithMFAprod
 
 Temp-Password :
 
@@ -47,8 +32,6 @@ AWS_ACCESS_KEY_ID :
 AWS_SECRET_ACCESS_KEY : 
 
 Roles Assigned
-    Dev Account  : arn:aws:iam::<dev-account-id>:role/AssumeRoleAdminWithMFAdev
-    Prod Account : arn:aws:iam::<prod-account-id>:role/AssumeRoleDeveloperWithMFAprod
 
 Temp-Password : 
 
