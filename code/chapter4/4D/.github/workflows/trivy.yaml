@@ -1,0 +1,114 @@
+name: s4cp.trivy
+
+on:
+  push:
+    branches:
+        - main
+    paths:
+      - "app/**"
+      - "!app/pom.xml"
+  pull_request:
+    branches:
+        - main
+    paths:
+      - "app/**"
+      - "!app/pom.xml"
+  workflow_dispatch:
+
+env:
+  GIT_ACTOR: "@${{ github.actor }}"
+
+jobs:
+  RunTrivy:
+    name: Run Trivy
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Run Gitleaks
+      uses: gitleaks/gitleaks-action@v2
+      continue-on-error: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITLEAKS_NOTIFY_USER_LIST: ${{ env.GIT_ACTOR }}        
+
+    - name: Set short git commit SHA
+      id: shortsha
+      run: echo "short_sha=`echo ${GITHUB_SHA} | cut -c1-6`" >> $GITHUB_OUTPUT
+
+    - name: Build, tag, and Save image for trivy scanning
+      id: build-save
+      run: |
+        docker build -t trivy_scan:latest -f app/Dockerfile app
+        docker save trivy_scan -o trivy_scan.tar trivy_scan:latest
+ 
+    - name: Run Trivy vulnerability scanner in tarball mode
+      uses: aquasecurity/trivy-action@0.11.1
+      if: github.event_name == 'pull_request'
+      continue-on-error: true
+      id: trivy_summary      
+      with:
+        input: trivy_scan.tar
+        format: template
+        template: "@tools/trivy/summary.tpl"
+        severity: 'CRITICAL,HIGH'
+        output: summary.txt
+
+    - name: Cat Trivy Output from File
+      uses: mathiasvr/command-output@v2.0.0
+      if: github.event_name == 'pull_request'
+      continue-on-error: true
+      id: trivy_summary_output
+      with:
+        run: cat summary.txt
+
+    - name: Trivy Scan Output
+      uses: actions/github-script@v7
+      if: github.event_name == 'pull_request'
+      env:
+        TRIVY_SCAN_SUMMARY: ${{ steps.trivy_summary_output.outputs.stdout }}
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const output = `## Trivy Scan Summary
+          
+          #### Trivy Scan \`${{ steps.trivy_summary.outcome }}\`
+
+          <details><summary>Show Trivy Scan Summary</summary>
+          ${process.env.TRIVY_SCAN_SUMMARY}
+          </details>
+
+          *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+
+          github.rest.issues.createComment ({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: output
+          })
+
+    - name: Run Trivy vulnerability scanner in tarball mode and generate HTML Report
+      uses: aquasecurity/trivy-action@0.11.1
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      continue-on-error: true
+      id: trivy_full_scan      
+      with:
+        input: trivy_scan.tar
+        format: template
+        template: "@/contrib/html.tpl"
+        severity: 'CRITICAL,HIGH'
+        output: trivy-report.html
+
+    - name: Save Trivy Full Scan Report
+      uses: actions/upload-artifact@v4
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      with:
+        name: trivy-report.html
+        path: trivy-report.html

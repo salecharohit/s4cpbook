@@ -1,0 +1,9 @@
+rules:
+  - id: valid-base-image
+    patterns:
+      - pattern-regex: |
+          FROM (?!maven:3\.8\.1-openjdk-17-slim|openjdk:17-alpine).*
+    message: Only 'maven:3.8.1-openjdk-17-slim' and 'openjdk:17-alpine' are allowed in the FROM tag of a Dockerfile.
+    severity: ERROR
+    languages:
+      - dockerfile

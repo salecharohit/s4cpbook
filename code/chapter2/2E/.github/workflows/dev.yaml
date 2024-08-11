@@ -1,0 +1,93 @@
+name: s4cp.infra.dev
+
+on:
+  push:
+    branches:
+        - dev
+    paths:
+      - "infra/**"
+      - "!**/README.md"
+  pull_request:
+    branches:
+        - dev
+    paths:
+      - "infra/**"
+      - "!**/README.md"
+  workflow_dispatch:
+
+jobs:
+  terraform:
+    name: "Terraform"
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write   
+    defaults:
+      run:
+        working-directory: "infra"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_OIDC_GLOBAL_ADMIN }}
+          aws-region: us-west-2
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.2.0
+
+      - name: Terraform Init
+        id: init
+        run: terraform init -backend-config=dev.hcl
+      
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate -no-color
+
+      - name: Terraform Plan
+        id: plan
+        if: github.event_name == 'pull_request'
+        run: terraform plan -no-color -var-file=dev.tfvars
+        continue-on-error: true
+
+      - name: Terraform Plan Output
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        env:
+          PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const output = `## Terraform infra Account Plan
+            
+            #### Terraform Initialization \`${{ steps.init.outcome }}\`
+            #### Terraform Validation \`${{ steps.validate.outcome }}\`
+            #### Terraform Plan \`${{ steps.plan.outcome }}\`
+
+            <details><summary>Show Plan</summary>
+            ${process.env.PLAN}
+            </details>
+
+            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+
+            github.rest.issues.createComment ({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
+            
+      - name: Terraform Plan Status
+        if: steps.plan.outcome == 'failure'
+        run: exit 1
+
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
+        run: terraform apply --auto-approve -var-file=dev.tfvars
+
+      - name: Terraform Output
+        if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
+        run: terraform output

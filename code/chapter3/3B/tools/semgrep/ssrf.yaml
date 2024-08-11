@@ -1,0 +1,16 @@
+rules:
+  - id: SSRF_Injection
+    patterns:
+    - pattern-either:
+      - pattern: | #execute Directly
+          $RETURN $METHOD(...,String $VAR, ...) {
+            ...
+            URL $URL = new URL($VAR);
+            ...
+          }
+      - pattern: $URL = new URL($VAR);
+    - pattern-not: $URL = new URL("...");
+    message: Possible SSRF Injection
+    languages:
+      - java
+    severity: WARNING

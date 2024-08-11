@@ -1,0 +1,162 @@
+name: s4cp.infra.dev
+
+on:
+  push:
+    branches:
+        - dev
+    paths:
+      - "infra/**"
+      - "!**/README.md"
+  pull_request:
+    branches:
+        - dev
+    paths:
+      - "infra/**"
+      - "!**/README.md"
+  workflow_dispatch:
+
+env:
+  GIT_ACTOR: "@${{ github.actor }}"  
+
+jobs:
+  terraform:
+    name: "Terraform"
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write   
+    defaults:
+      run:
+        working-directory: "infra"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_OIDC_GLOBAL_ADMIN }}
+          aws-region: us-west-2
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_NOTIFY_USER_LIST: ${{ env.GIT_ACTOR }}
+
+# This is needed as GHA Runners are not equipped to handle eks commands of AWS
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install AWS CLI
+        run: python3 -m pip install awscli
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.2.0
+
+      - name: Setup OPA
+        if: github.event_name == 'pull_request'
+        uses: open-policy-agent/setup-opa@v2
+        with:
+          version: 0.54.0
+
+      - name: Terraform Init
+        id: init
+        run: terraform init -backend-config=dev.hcl
+      
+      - name: Terraform Validate
+        id: validate
+        run: terraform validate -no-color
+
+      - name: Terraform Plan
+        id: plan
+        if: github.event_name == 'pull_request'
+        run: terraform plan -no-color -var-file=dev.tfvars --out tfplan.bin
+        continue-on-error: true
+
+      - name: Terraform Plan Export
+        id: export
+        if: github.event_name == 'pull_request'
+        run: |
+          terraform show -json tfplan.bin > tfplan.json
+        continue-on-error: true
+
+      - name: Terraform Plan Output
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        env:
+          PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const output = `## Terraform Infra Account Plan
+            
+            #### Terraform Initialization \`${{ steps.init.outcome }}\`
+            #### Terraform Validation \`${{ steps.validate.outcome }}\`
+            #### Terraform Plan \`${{ steps.plan.outcome }}\`
+
+            <details><summary>Show Plan</summary>
+            ${process.env.PLAN}
+            </details>
+
+            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+
+            github.rest.issues.createComment ({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
+
+      - name: Run OPA Tests
+        uses: mathiasvr/command-output@v2.0.0
+        id: opa
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        with:
+          run: opa eval --input ${{ github.workspace }}/infra/tfplan.json --data scripts/opa/policies.rego -f pretty 'data.aws'
+
+      - name: OPA Scan Output
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        env:
+          OPACHECK: ${{ steps.opa.outputs.stdout }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const output = `## OPA Scan Output
+            
+            #### OPA Scan \`${{ steps.OPACHECK.outcome }}\`
+
+            <details><summary>Show OPA Scan Output</summary>
+            ${process.env.OPACHECK}
+            </details>
+
+            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+
+            github.rest.issues.createComment ({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
+            
+      - name: Terraform Plan Status
+        if: steps.plan.outcome == 'failure'
+        run: exit 1
+
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
+        run: terraform apply --auto-approve -var-file=dev.tfvars
+
+      - name: Terraform Output
+        if: github.ref == 'refs/heads/dev' && github.event_name == 'push'
+        run: terraform output

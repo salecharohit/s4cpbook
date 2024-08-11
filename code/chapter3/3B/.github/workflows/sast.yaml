@@ -1,0 +1,80 @@
+name: s4cp.sast
+
+on:
+  push:
+    branches:
+        - main
+    paths:
+      - "app/**"
+      - "!app/pom.xml"
+  pull_request:
+    branches:
+        - main
+    paths:
+      - "app/**"
+      - "!app/pom.xml"
+  workflow_dispatch:   
+
+jobs:
+  semgrep:
+    name: Semgrep Scan
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Clone Application
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+        
+      - name: Install Semgrep
+        run: python3 -m pip install semgrep        
+
+      - name: Run Semgrep and Process stdout
+        uses: mathiasvr/command-output@v2.0.0
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        id: semgrep
+        with:
+          run: semgrep scan --config=tools/semgrep --config=auto --include=app
+
+      - name: Semgrep Scan Output
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        env:
+          SEMGREP: ${{ steps.semgrep.outputs.stdout }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const output = `## Semgrep Scan Output
+            
+            #### Semgrep Scan \`${{ steps.semgrep.outcome }}\`
+
+            <details><summary>Show Semgrep Output</summary>
+            ${process.env.SEMGREP}
+            </details>
+
+            *Pusher: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
+
+            github.rest.issues.createComment ({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            })
+
+      - name: Run Semgrep and Generate Report
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: semgrep scan --text --output semgrep.txt --config="tools/semgrep" --config="auto" --include=app
+
+      - name: Save Semgrep Report
+        uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        with:
+          name: semgrep.txt
+          path: semgrep.txt
