@@ -1,8 +1,0 @@
-rules:
-  - id: Command_Injection_Exec
-    patterns:
-      - pattern: exec(...)
-    message: Dangerous exec function found
-    languages:
-      - php
-    severity: WARNING
