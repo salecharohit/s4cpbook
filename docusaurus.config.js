@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Securing 4 C's of a Software Product",
+  title: "Securing 4 C's of a Software Product - AWS Edition",
   tagline: 'Practical Product Security by @salecharohit',
   favicon: 'img/favicon.ico',
 
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'salecharohit', // Usually your GitHub org/user name.
-  projectName: 's4cp', // Usually your repo name.
+  projectName: 's4cpbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/salecharohit/s4cp/',
+            'https://github.com/salecharohit/s4cpbook/',
         },
         blog: false,
         theme: {
@@ -68,16 +68,16 @@ const config = {
         items: [
           { to: '/docs/intro', position: 'right', label: '📖 Docs' },
           {
-            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cp", position: 'right', label: '❤️ Tweet'
+            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cpbook", position: 'right', label: '❤️ Tweet'
           },
           {
-            to: 'https://github.com/salecharohit/s4cp',
+            to: 'https://github.com/salecharohit/s4cpbook',
             position: 'right',
             label: '🌟 GitHub',
           },
         ],
       },
-      metadata: [{ name: 'keywords', content: 'Product Security, Kubernetes Security, Docker Security, Cloud Native Security, Pentesting, DevSecOps, AWS IAM, AWS EKS Security, Kubernetes RBAC, Container Security, Open Source Security, Cloud Security, DevOps Security, Security Compliance, GitHub Actions Security, SAST, SCA, Compliance as Code, Secrets Management, OPA, Kyverno, Trivy, Gitleaks, AWS SCPs, Golden Containers, IRSA, Dependency Checker', }],     
+      metadata: [{ name: 'keywords', content: 'Product Security, Kubernetes Security, Docker Security, Cloud Native Security, Pentesting, DevSecOps, AWS IAM, AWS EKS Security, Kubernetes RBAC, Container Security, Open Source Security, Cloud Security, DevOps Security, Security Compliance, GitHub Actions Security, SAST, SCA, Compliance as Code, Secrets Management, OPA, Kyverno, Trivy, Gitleaks, AWS SCPs, Golden Containers, IRSA(IAM Roles Service Account), Dependency Checker,IMDSv2 enforcement', }],     
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
