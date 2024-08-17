@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/code.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Integrate static application security testing (SAST) and secrets scanning into the CI/CD pipeline using open-source tools like Semgrep, Dependency-Checker, and GitLeaks with GitHub Actions
       </>
     ),
   },
@@ -18,8 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/docker.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Set up AWS ECR and IAM Role for service account access using OIDC, ensure Dockerfile security best practices, validate them with Semgrep, and build and scan secure Docker images with Trivy in GitHub Actions
       </>
     ),
   },
@@ -28,8 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/kubernetes.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+       Enforce Kubernetes RBAC for secure access, manage and encrypt secrets using AWS Secrets Manager and KMS, implement runtime security with Kyverno, and restrict pod communications using network security policies with Calico.
       </>
     ),
   },
@@ -38,8 +35,7 @@ const FeatureList = [
     Svg: require('@site/static/img/aws.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+    Enforce encryption and permissions with SCPs, implement Terraform runtime security with OPA, configure AWS Organization with dev, prod, and identity accounts, set up IAM roles with MFA, enable cross-account access, and create a multi-account CI/CD pipeline in GitHub Actions using OIDC.
       </>
     ),
   },

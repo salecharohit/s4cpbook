@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 2 - Securing IAM",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Establish an AWS Organization with dev, prod, and identity accounts, configure IAM roles, groups, users with MFA, enable cross-account role assumption, and set up a multi-account CI/CD pipeline in GitHub Actions using OIDC authentication."
+  }
+}

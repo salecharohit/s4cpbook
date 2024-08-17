@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 1 - Insecure Code",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Provision AWS EKS and components using Terraform, deploy and model the platform, then identify and assess potential threats, including application security, credential leaks, compliance, authentication, authorization, and supply chain issues. Afterward, destroy the insecure setup and rebuild a secure environment while preparing the lab for future use."
+  }
+}
