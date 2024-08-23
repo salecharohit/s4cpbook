@@ -17,7 +17,7 @@ Configure and copy the SSH Key
 ```bash
 cd ~
 ssh-keygen
-cat ~/.ssh/<key_name>
+cat ~/.ssh/id_rsa.pub
 ```
 
 ![](img/1A_7.png)
@@ -26,6 +26,37 @@ cat ~/.ssh/<key_name>
 - Copy the public ssh key in the respective section and click on `Add SSH Key`.
 
 ![](img/1A_8.png)
+
+## SSH Config
+
+Its a good idea at this point to also add an ssh config so that we can easily work with github.com through ssh.
+
+1. Create the config file
+   
+```bash
+cd ~
+touch ~/.ssh/config
+```
+
+2. Open the Config file using the Open Folder command as shown below
+
+![](img/open_config.png)
+
+3. Add the following lines to your config file and save it.
+
+```config
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+```
+
+4. Test connectivity to Github
+
+```bash
+chmod 600 ~/.ssh/id_rsa
+ssh github.com
+```
 
 ## 🌟 Create a Github Repository
 

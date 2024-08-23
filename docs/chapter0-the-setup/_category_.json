@@ -1,7 +1,6 @@
 {
-  "label": "Chapter 0 - Setup",
+  "label": "Chapter 0 - The Setup",
   "position": 2,
-  "className": "red",
   "link": {
     "type": "generated-index",
     "description": "All requirements and setup instructions needed to get going with this course"
