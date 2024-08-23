@@ -9,7 +9,7 @@ If you donot have a domain , I'd recommend to buy it from any public Domain Regi
 
 For the purpose of this course,I purchased a domain called `s4cp.com` and will be using the same for all examples. You are expected to use your own domain/sub-domain by simply replacing it with `s4cp.com` 
 
-:::danger
+:::danger Domain or Sub-Domain
 
 Follow any one of the below setup and not both, depending on what you'd wish to use, either a domain or a sub-domain. Also, please ensure you've completed the [AWS Setup](docs/chapter0-setup/aws-setup.md#) page prior to moving ahead with this page.
 
