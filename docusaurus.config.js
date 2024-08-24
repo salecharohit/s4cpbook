@@ -123,7 +123,7 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ['hcl','bash','config'],
+        additionalLanguages: ['hcl','bash'],
       },
     }),
 };

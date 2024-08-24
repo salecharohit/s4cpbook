@@ -11,7 +11,7 @@ For the purpose of this course,I purchased a domain called `s4cp.com` and will b
 
 :::danger Domain or Sub-Domain
 
-Follow any one of the below setup and not both, depending on what you'd wish to use, either a domain or a sub-domain. Also, please ensure you've completed the [AWS Setup](docs/chapter0-setup/aws-setup.md#) page prior to moving ahead with this page.
+Follow any one of the below setup and not both, depending on what you'd wish to use, either a domain or a sub-domain. Also, please ensure you've completed the [AWS Setup](/docs/chapter0-the-setup/aws-setup.md#) page prior to moving ahead with this page.
 
 :::
 

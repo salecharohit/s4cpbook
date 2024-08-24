@@ -8,7 +8,7 @@ In order to follow this training there is a long list of tools that are required
 
 :::danger
 
-Please ensure to have completed the [Domain Name Setup](docs/chapter0-setup/domain-setup.md#) prior to moving ahead with this page.
+Please ensure to have completed the [Domain Name Setup](/docs/chapter0-the-setup/domain-setup.md#) prior to moving ahead with this page.
 
 :::
 
@@ -39,7 +39,7 @@ key_name                    = "ubuntu"
 
 1. L2 `region` should be the closest region to your location to reduce latency
 2. L4 `instance_type` is recommended to be `t3.medium or above`
-3. Ensure L7 contains the proper domain name that was configured in the [Domain Name Setup](docs/chapter0-setup/domain-setup.md#) section.
+3. Ensure L7 contains the proper domain name that was configured in the [Domain Name Setup](/docs/chapter0-the-setup/domain-setup.md#) section.
 4. Ensure a strong password is configured in L8 as it'll be a public facing website where your VSCode interface will be accessible on `https://ide.domain.com/code/`
 5. `key_name` on L9 is arbitrary and can be set as `ubuntu` 
 6. Once your done adding the relevant information we need to remove the .bak so that terraform can read the file for processing

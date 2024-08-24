@@ -22,7 +22,26 @@ git clone git@github.com:salecharohit/s4cpcode.git
 Please ensure that you clone it in the home folder as the folder names and their location is very important to follow this course and the commands
 :::
 
-## Modify ``
+The repository that you've downloaded is divided into various chapters aligning to the various topics we will be discussing in this course. 
+
+```bash
+
+s4cpcode git:(main) ls -l
+total 8
+-rw-r--r--   1 rohit  staff  1777 11 Aug 19:57 README.md
+drwxr-xr-x@  6 rohit  staff   192 10 Aug 18:15 chapter1
+drwxr-xr-x@  7 rohit  staff   224 10 Aug 18:15 chapter2
+drwxr-xr-x@  9 rohit  staff   288 10 Aug 18:15 chapter3
+drwxr-xr-x@  8 rohit  staff   256 10 Aug 18:15 chapter4
+drwxr-xr-x@ 11 rohit  staff   352 10 Aug 18:15 chapter5
+drwxr-xr-x@  8 rohit  staff   256 10 Aug 18:15 chapter6
+
+```
+
+
+
+## 🔧 Modify `terraform.auto.tfvars`
+
 
 
 
