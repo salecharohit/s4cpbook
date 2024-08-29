@@ -46,13 +46,16 @@ key_name                    = "ubuntu"
 ```bash
 mv terraform.auto.tfvars.bak terraform.auto.tfvars
 ```
-   
-
 
 :::tip Power of .gitignore
 
 The `terraform.auto.tfvars`  is added in .gitignore if your repository hence,this file won't be commited to github.com.
 Additionally, a ubuntu.pem file which is a private key for your SSH is also configured but is added in gitignore for safety of not being committed.
+:::
+
+:::danger Change your password
+
+In the `terraform.auto.tfvars`  ensure to change the password for `vscode_password` 
 :::
 
 ## ▶️ Start it Up

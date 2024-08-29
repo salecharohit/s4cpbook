@@ -12,7 +12,8 @@ In this section we'll setup the Github repository and configure Github access wh
 
 ### 🍔 Configure Github SSH Key <i class="fa fa-flask" aria-hidden="true"></i>
 
-Configure and copy the SSH Key
+- Open the terminal by clicking on hamburger menu at extreme top-left of , Terminal , New Terminal.
+- Configure and copy the SSH Key using the following commands
 
 ```bash
 cd ~
@@ -27,7 +28,7 @@ cat ~/.ssh/id_rsa.pub
 
 ![](img/1A_8.png)
 
-## SSH Config
+## ⚙️ SSH Config
 
 Its a good idea at this point to also add an ssh config so that we can easily work with github.com through ssh.
 
@@ -72,3 +73,13 @@ For progressing with this course ensure that the name of your repository is `pla
 ![](img/1A_9.png)
 
 That's all your Github setup is good to go 🎉
+
+:::note End of Chapter 0
+
+That completes the Chapter 0, before you move on to Chapter 1 ensure that
+
+- Your [AWS Account](/docs/chapter0-the-setup/aws-setup.md) has been setup
+- Your [Domain](/docs/chapter0-the-setup/domain-setup.md) has been setup
+- Your [Cloud Desktop](/docs/chapter0-the-setup/cloud-desktop-setup.md) has been setup
+- Your [Github Account](/docs/chapter0-the-setup/github-account-setup.md) has been setup.
+:::
