@@ -1,0 +1,8 @@
+{
+  "label": "Initiate",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section we'll setup the basic building blocks for creating our entire secure stack i.e. creating an OpenID Connect Provider for seamless and secure authentication between Github Actions and AWS without storing the Access Keys anywhere. Plus, we also need to create an S3 Bucket and DynamoDB for securely storing the Terraform state file for the entire project."
+  }
+}
