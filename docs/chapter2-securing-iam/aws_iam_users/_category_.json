@@ -1,0 +1,8 @@
+{
+  "label": "2.4 AWS IAM Users",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section we'll create AWS IAM Users and setup their console as well as CLI access."
+  }
+}

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 🧠 Threat Model
+# 1.3 Threat Model
 
 Let's dive a bit deeper into each of these potential threats and security issues across the four pillars of a product:
 

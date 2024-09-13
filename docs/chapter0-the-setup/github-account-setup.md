@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 🐙 Github Account Setup
+# 0.4 Github Account Setup
 
 We'll be exclusively using Github for CI (Continuous Integration) and Github Actions (Continuous Delivery) throughout this course. Hence, its critical to set things up as required to run this training smoothly.
 

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🔐 OIDC
+# 2.1.2 OIDC
 
 **OpenID Connect (OIDC)** is an identity layer built on top of the OAuth 2.0 protocol that allows clients, like applications, to verify the identity of end-users based on the authentication performed by an external provider. In AWS, an OIDC provider lets AWS services trust an external identity provider, such as GitHub, to authenticate and authorize access to AWS resources without needing to manage long-term credentials.
 

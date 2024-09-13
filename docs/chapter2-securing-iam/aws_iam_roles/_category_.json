@@ -1,0 +1,8 @@
+{
+  "label": "2.3 AWS IAM Roles",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section we'll create the AWS IAM Roles and Groups that the users will inherit"
+  }
+}

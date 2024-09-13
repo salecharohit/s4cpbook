@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 🚀 Deploy Stack
+# 1.1 Deploy Stack
 
 The below script will provision the entire AWS infrastructure including AWS EKS,AWS RDS,AWS Route53 and the application deployed as a Kubernetes Deployment along with the necessary ingress controller which is mapped to the hostname provided.
 

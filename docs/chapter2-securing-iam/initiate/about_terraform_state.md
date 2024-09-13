@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 🔄 Terraform State
+# 2.1.1 Terraform State
 
 In this section we'll explore Terraform state and why is it important to store it and also discuss some best practices of storing it.
 

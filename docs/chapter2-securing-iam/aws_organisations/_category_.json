@@ -1,0 +1,8 @@
+{
+  "label": "2.2 AWS Organizations",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section we'll explore AWS Organisations and how we can create multiple different accounts under a single root account to mimic our environment setup."
+  }
+}

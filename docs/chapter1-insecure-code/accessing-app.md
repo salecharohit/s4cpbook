@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🖥️ Accessing Application
+# 1.2 Accessing Application
 
 Once you see the below output, its indicative that your entire stack has been deployed and its time we access it !
 

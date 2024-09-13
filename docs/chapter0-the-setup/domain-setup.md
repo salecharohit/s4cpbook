@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 🏢 Domain Setup
+# 0.2 Domain Setup
 
 For running this course we will need a Top-Level Domain name or a Sub-Domain whose NameServers are in your control.
 If you donot have a domain , I'd recommend to buy it from any public Domain Registrar. If you already have a domain, then you can simply add a sub-domain and continue with this course. 

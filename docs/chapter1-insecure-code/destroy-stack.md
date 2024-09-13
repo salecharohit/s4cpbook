@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 💥 Destroy Stack
+# 1.4 Destroy Stack
 
 Let's destroy this insecure app as we'll now build security ground up
 

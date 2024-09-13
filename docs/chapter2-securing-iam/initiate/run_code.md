@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# ▶️ Run Code
+# 2.1.3 Run Code
 
 Now that we've understood what is [Terraform State](/docs/chapter2-securing-iam/initiate/about_terraform_state.md) and [OIDC](/docs/chapter2-securing-iam/initiate/about_oidc.md) let's being by creating these items alongwith the necessary items of S3 Bucket and DynamoDB
 

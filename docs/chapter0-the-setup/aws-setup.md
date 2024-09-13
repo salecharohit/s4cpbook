@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# ☁️ AWS Setup
+# 0.1 AWS Setup
 
 In this section we'll look into how to setup our AWS account and what is the information needed to move ahead with the course.
 Ensure you've read through the [Disclaimer](docs/intro.md#%EF%B8%8F-disclaimer) and [How To Use this Course](docs/intro.md#%EF%B8%8F-how-to-follow-this-course-)
