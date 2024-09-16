@@ -71,10 +71,11 @@ gpg --export <publikc-key-id> | base64 > ~/playground/global/data/vegeta.pub
 
 :::tip GPG Key Generation and Sharing
 
-The above steps might seem overwhelming however, this is something that each user who needs access to the AWS environment will need to do and not a responsibility of a single person.
+- In practice each individual user shall be responsible in extracting their own keys.
+- We are doing this as part of the training because we have all the GPG keys configured in the same machine.
+- Practically each user will share their public keys and the encrypted output shall be granted to them for decryption maintaining the confidentiality of the data.
 
 :::
-
 
 :::warning AWS Key Leakage
 

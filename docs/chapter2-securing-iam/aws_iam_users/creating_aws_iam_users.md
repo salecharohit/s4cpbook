@@ -29,4 +29,3 @@ git push
 - Record the output of above Terraform execution and paste it into notes.md file as shown below
 
 ![](img/copy_users_info.png)
-

@@ -17,3 +17,25 @@ Following table shows the [IAM Roles](/docs/chapter2-securing-iam/aws_iam_roles/
 |-----------|--------------------------------------------------------------------------------------|
 | Goku      | AssumeRoleAdminWithMFAprod,AssumeRoleAdminWithMFAdev,AssumeRoleIAMAdminWithMFA       |
 | Vegeta    | AssumeRoleDeveloperWithMFAprod,AssumeRoleDeveloperWithMFAdev                         |
+
+## Configuring Users
+
+- All the users need to be configured in the `global/users.auto.tfvars` as shown below where the following information is required.
+  - username
+  - Role
+  - Public GPG Key file location
+
+```hcl title="global/users.auto.tfvars"
+users = {
+  goku = {
+    username = "goku"
+    role     = "admin"
+    pgp_key  = "goku.pub"
+  },
+  vegeta = {
+    username = "vegeta"
+    role     = "developer"
+    pgp_key  = "vegeta.pub"
+  }
+}
+```

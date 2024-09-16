@@ -1,0 +1,8 @@
+{
+  "label": "2.5 Multi-Environment Strategy",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section setup an end-to-end Multi-Account CI/CD Pipeline in Github Actions using OIDC authentication"
+  }
+}
