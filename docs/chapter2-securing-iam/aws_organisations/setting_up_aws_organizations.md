@@ -15,6 +15,48 @@ cd ~/playground
 cp -r ~/s4cpcode/chapter2/2B/. .
 ```
 
+## ✏️ Edit accounts.auto.tfvars
+
+- Every AWS account needs a unique Email address for recovery and identity purposes. Hence, we first need to provide the email addresses we'll be using for different sub-accounts that'll be creating.
+- Below is the sample file that stores the information of the email addresses that'll be used for creating the respective AWS accounts.
+
+```hcl title="global/accounts.auto.tfvars"
+accounts = {
+  dev = {
+    name  = "dev"
+    email = "email+dev@gmail.com" #@CHANGEME
+  },
+  identity = {
+    name  = "identity"
+    email = "email+identity@gmail.com" #@CHANGEME
+  },
+  prod = {
+    name  = "prod"
+    email = "email+prod@gmail.com" #@CHANGEME
+  }
+}
+```
+
+So if your email address is let's say `s4cpuser@gmail.com` then your `global/accounts.auto.tfvars` should look like
+
+```hcl title="global/accounts.auto.tfvars"
+accounts = {
+  dev = {
+    name  = "dev"
+    email = "s4cpuser+dev@gmail.com" #@CHANGEME
+  },
+  identity = {
+    name  = "identity"
+    email = "s4cpuser+identity@gmail.com" #@CHANGEME
+  },
+  prod = {
+    name  = "prod"
+    email = "s4cpuser+prod@gmail.com" #@CHANGEME
+  }
+}
+```
+
+
 ## ✏️ Edit global.hcl
 
 - Open `global/global.hcl`
@@ -24,19 +66,6 @@ cp -r ~/s4cpcode/chapter2/2B/. .
 - Edit bucket name and dynamo db name that can be copied from notes.md saved earlier.
 
 ![](img/2B_2.png)
-
-## Configure IAM Role
-
-- Next, we also need to configure the `AWS_OIDC_GLOBAL_ADMIN` using which GHA will have temporary access to the AWS account.
-- Open `https://github.com/<username>/playground/settings/variables/actions`
-
-![](img/github_config.png)
-
-- Click on `New Repository Variable` and add `AWS_OIDC_GLOBAL_ADMIN` as the key and the value as copied in the notes.md file. Save it.
-  
-  ![](img/new_repository_variable.png)
-
-
 
 ## ✔️ Commit The changes
 

@@ -9,7 +9,8 @@ Ensure you've read through the [Disclaimer](docs/intro.md#%EF%B8%8F-disclaimer) 
 
 ## 🔒 AWS Account Login
 
-- Log into your AWS account and visit the IAM Section
+- Creating an AWS account using an email whose provider supports Email aliases is strongly recommended.
+- Log into your AWS account and visit the IAM Section.
 
 ![AWS IAM](img/aws_iam.png)
 

@@ -65,6 +65,18 @@ Please copy the output and paste it in notes.md file as shown below.
 
 ![](img/copy_into_notes.png)
 
+## ⚙️ Configure OIDC IAM Role
+
+- Next, we also need to configure the `AWS_OIDC_GLOBAL_ADMIN` using which GHA will have temporary access to the AWS account.
+- Open `https://github.com/<username>/playground/settings/variables/actions`
+
+![](img/github_config.png)
+
+- Click on `New Repository Variable` and add `AWS_OIDC_GLOBAL_ADMIN` as the key and the value as copied in the notes.md file. Save it.
+  
+  ![](img/new_repository_variable.png)
+
+
 :::note End of Chapter 2 - Initiate
 
 - In this chapter we learnt about [terraform state](/docs/chapter2-securing-iam/initiate/about_terraform_state.md) and even created it for storing all the changes that will happen to our infrastructure
