@@ -8,7 +8,7 @@ Sempgrep is a powerful open-source static analysis tool that empowers developers
 
 Let's better understand semgrep with two practical examples
 
-## Dangerous functions in PHP
+## 💣 Dangerous functions in PHP
 
 Below is the PHP file stored as test.php in our current folder. 
 test.php accepts a parameter called IP which is then given to the `exec` function for checking reachability.
@@ -61,7 +61,7 @@ semgrep scan -c php.yaml
 
 As can be seen the semgrep rule does identify the exec function which is a dangerous function and we now need to manually investigate. This is extremely helpful when the code base is large as Semgrep can execute the scan very fast.
 
-## SQL Injection in Java
+## 💉 SQL Injection in Java
 
 Similarly, now we'd like to identify if semgrep can catch SQL Injection bugs in Java. 
 

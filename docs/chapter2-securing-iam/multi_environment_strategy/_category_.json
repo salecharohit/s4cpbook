@@ -3,6 +3,6 @@
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "In this section setup an end-to-end Multi-Account CI/CD Pipeline in Github Actions using OIDC authentication"
+    "description": "In this section, we set up an end-to-end Multi-Account CI/CD pipeline in GitHub Actions using OIDC authentication, focusing on a multi-account strategy that includes configuring development and production environments. This involves establishing separate development and production pipelines, along with the capability to destroy EC2 instances as part of the deployment process."
   }
 }

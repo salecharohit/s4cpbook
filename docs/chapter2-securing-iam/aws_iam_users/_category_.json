@@ -3,6 +3,6 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "In this section we'll create AWS IAM Users and setup their console as well as CLI access."
+    "description": "AWS IAM Users are individual identities within AWS that allow for fine-grained access control. This process involves generating and copying GPG keys for secure access, creating IAM users with specific permissions like Goku and Vegeta Access, decrypting AWS access keys, and understanding the AWS key management process to ensure secure handling of credentials."
   }
 }

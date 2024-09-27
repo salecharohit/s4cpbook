@@ -6,10 +6,10 @@ sidebar_position: 1
 
 In today's digital landscape, automated source code scanning is indispensable for identifying vulnerabilities swiftly. Two key focuses in this realm are the detection of injection vulnerabilities and identifying dangerous functions.
 
-**Injection Vulnerabilities:**
+**Injection Vulnerabilities:** 💉
 Automated scanning excels at identifying injection threats like SQL injection and Cross-Site Scripting (XSS). By analyzing code patterns, it swiftly spots potential injection points, enabling proactive remediation and safeguarding against these pervasive attacks.
 
-**Identifying Dangerous Functions:**
+**Identifying Dangerous Functions:** ⚠️
 Certain functions or APIs in code can pose security risks if mishandled. Automated scans pinpoint these risky functions, such as file operations or cryptographic functions, allowing developers to apply necessary security measures.
 
 **Semgrep:**

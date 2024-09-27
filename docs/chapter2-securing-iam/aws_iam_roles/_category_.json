@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "In this section we'll create the AWS IAM Roles and Groups that the users will inherit"
+    "description": "AWS IAM Roles and Groups are essential for managing permissions and access control within AWS. This involves understanding their functionality and structure, and the process of creating these roles and groups to effectively manage user access and permissions in the AWS environment."
   }
 }

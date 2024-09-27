@@ -1,0 +1,8 @@
+{
+  "label": "3.2 - Software Composition Analysis",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Software Composition Analysis identifies vulnerabilities in third-party libraries, addressing supply chain risks in software. Dependency-Checker helps automate this process, and integrating it into GitHub Actions (GHA) enables continuous monitoring of dependencies in the development workflow."
+  }
+}

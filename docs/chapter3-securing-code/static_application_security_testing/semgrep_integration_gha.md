@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Now let's integrate semgrep with Github Actions and also look at how we can fix the issues that've been identified.
 
-## Semgrep Command
+## ⌨️ Semgrep Command
 
 Let's first try to understand the actual command that needs to be executed in Github Actions.
 
@@ -18,7 +18,7 @@ Let's first try to understand the actual command that needs to be executed in Gi
 semgrep scan --config=tools/semgrep --config=auto --include=app
 ```
 
-## Prepare the Code
+## ✅ Prepare the Code
 
 Let's prepare the code now for running semgrep.
 
@@ -40,7 +40,7 @@ git commit -m "integrating semgrep"
 git push --set-upstream origin semgrep
 ```
 
-## Create PR
+## ⬆️ Create PR
 
 Let's create a PR from `semgrep` branch to `main` branch
 
@@ -48,23 +48,27 @@ Let's create a PR from `semgrep` branch to `main` branch
 
 ![](img/3A_4.png)
 
-## View PR
+## 🔍 View PR
 
 View the PR comments as shown below especially that displaying the semgrep output as shown below
 
 ![](img/3A_5.png)
 
+- Semgrep Scan Output
+
 ![](img/3A_6.png)
+
+
 
 ![](img/3A_7.png)
 
-## Merge PR
+## 🔗 Merge PR
 
 - Merge the PR and commit the changes.
 
 ![](img/3A_8.png)
 
-## View Semgrep Artifact
+## 👁️ View Semgrep Artifact
 
 - Once the PR is merged Semgrep GHA will produce an artifact containing compelete semgrep output as shown below.
 

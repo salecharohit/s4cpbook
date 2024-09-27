@@ -1,0 +1,8 @@
+{
+  "label": "3.3 - Secrets Detection",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Secrets Detection involves identifying sensitive information, such as API keys or passwords, in code repositories to prevent leakage and its associated risks. Gitleaks is a tool that can be integrated into GitHub Actions (GHA) for continuous monitoring and customized scanning, along with methods for cleaning Git commit history to remove any inadvertently exposed secrets."
+  }
+}
