@@ -12,6 +12,12 @@ The best way to deal with this situation is
 
 - Rotate your credentials and store them in a secure manner (which we'll see in more detail in Chapter 5 : Securing the Cluster)
 
+:::tip BGD Repo Cleaner why all references must be cleaned 
+
+[https://www.aquasec.com/blog/undetected-hard-code-secrets-expose-corporations/](https://www.aquasec.com/blog/undetected-hard-code-secrets-expose-corporations/)
+
+:::
+
 Let's walk through the process of being able to clean the git history
 
 ## 👁️ View the Git History
@@ -143,3 +149,13 @@ Same can be seen in the screenshot below.
 ![](img/skip_ci.png)
 
 :::
+
+:::note End of Chapter 3
+
+That completes the Chapter 3, before you move to Chapter 4
+
+- Ensure that you've setup and integrated [Semggrep in Github Actions](/docs/chapter3-securing-code/static_application_security_testing/semgrep_integration_gha.md) for implementing Static Application Security Testing (SAST)
+- Ensure that you've setup and integrated [Dependency Checker in Github Actions](/docs/chapter3-securing-code/software_composition_analysis/introduction_to_dependency_checker.md) for implementing Software Composition Analysis (SCA)
+- Ensure that you've setup and integrated [Gitleaks in Github Actions](/docs/chapter3-securing-code/secrets_detection/integrating_gitleaks_gha.md) for implementing Secrets Detection
+- Ensure that you've learnt how to [Practically remove secrets from Git history](/docs/chapter3-securing-code/secrets_detection/cleaning_git_commit_history.md)
+

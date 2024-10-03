@@ -4,9 +4,17 @@ sidebar_position: 2
 
 # Introduction to Semgrep
 
-Sempgrep is a powerful open-source static analysis tool that empowers developers and security professionals to identify and remediate security issues and code quality problems in their codebase. With its user-friendly rules and queries, Semgrep provides an efficient and customizable way to scan code for vulnerabilities and misconfigurations. It's a valuable addition to any development or security workflow, helping teams ensure the integrity and security of their software projects.
+[Semgrep](https://github.com/returntocorp/semgrep) is a powerful open-source static analysis tool that empowers developers and security professionals to efficiently identify and remediate security issues and code quality problems in their codebases. With user-friendly rules and customizable queries, Semgrep enables flexible and targeted scanning for vulnerabilities and misconfigurations, making it a valuable addition to any development or security workflow. In today’s digital landscape, automated source code scanning is essential for quickly detecting vulnerabilities, particularly injection threats and dangerous functions, thereby helping teams maintain the integrity and security of their software projects.
 
-Let's better understand semgrep with two practical examples
+💉 **Injection Vulnerabilities:**  
+Automated scanning is highly effective at identifying injection threats, such as SQL injection and Cross-Site Scripting (XSS). By analyzing code patterns, it swiftly detects potential injection points, allowing for proactive remediation and protection against these widespread attacks.
+
+⚠️ **Identifying Dangerous Functions:** 
+Certain functions or APIs can introduce security risks if mishandled. Automated scans can pinpoint these risky operations—like file handling or cryptographic functions—enabling developers to implement necessary security measures.
+
+In summary, automated source code scanning, enhanced by tools like Semgrep, is a cornerstone of modern security practices. It efficiently uncovers injection vulnerabilities and dangerous function usage, strengthening applications against evolving threats. 
+
+Let’s delve deeper into Semgrep with two practical examples.
 
 ## 💣 Dangerous functions in PHP
 

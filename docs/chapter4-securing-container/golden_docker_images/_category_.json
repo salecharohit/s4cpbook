@@ -1,0 +1,8 @@
+{
+  "label": "4.2 - Golden Docker Images",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Golden Docker Images are pre-configured, secure base images that adhere to best practices, ensuring consistent and safe deployments across environments. Implementing Semgrep rules to enforce the use of trusted base images, disallow non-root user contexts, and incorporating security checks in Dockerfile GitHub Actions contributes to a more robust Dockerfile security posture."
+  }
+}
