@@ -1,0 +1,8 @@
+{
+  "label": "5.2 - Kubernetes RBAC",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "In AWS EKS, RBAC (Role-Based Access Control) is used to define and manage permissions for Kubernetes resources by associating roles with specific users, groups, or service accounts. Kubernetes RBAC allows for fine-grained control over access to resources within the cluster, ensuring users only have the necessary permissions to perform their tasks."
+  }
+}

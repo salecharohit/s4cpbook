@@ -1,0 +1,8 @@
+{
+  "label": "5.3 - Secrets and Encryption",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "We shall explore how to encrypt kubernetes secrets and also look at how to dynamically fetch secrets for kubernetes pods"
+  }
+}

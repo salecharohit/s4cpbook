@@ -1,0 +1,8 @@
+{
+  "label": "5.1 - Setup Prod K8s",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "The production infrastructure is set up and configured for deployment. Specific steps or credentials are required for secure access to this environment."
+  }
+}

@@ -3,6 +3,6 @@
   "position": 6,
   "link": {
     "type": "generated-index",
-    "description": "Enforce Kubernetes RBAC for secure access, manage and encrypt secrets using AWS Secrets Manager and KMS, implement runtime security with Kyverno, and restrict pod communications using network security policies with Calico."
+    "description": "Enforce secure access in Kubernetes using RBAC and manage secrets via AWS Secrets Manager, encrypted with AWS KMS. Strengthen runtime security with tools like Kyverno, and control pod communications using network security policies with Calico."
   }
 }
