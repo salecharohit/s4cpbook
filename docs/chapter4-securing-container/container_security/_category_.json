@@ -1,0 +1,8 @@
+{
+  "label": "4.3 - Container Security",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Docker Continuous Integration involves automating the process of building, testing, and pushing Docker images to a registry using a CI/CD pipeline. For AWS, create an ECR IAM role with necessary permissions and an ECR registry to store Docker images."
+  }
+}

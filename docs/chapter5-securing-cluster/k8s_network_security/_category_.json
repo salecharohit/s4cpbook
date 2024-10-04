@@ -1,0 +1,8 @@
+{
+  "label": "5.5 - K8s Network Security using Calico",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "The EKS default VPC CNI provides network connectivity for pods in AWS EKS, but tools like Calico can be introduced for advanced network security policies. Calico enables enforcement of policies such as 'deny all' for restricting pod, ingress, and database communication, allowing for fine-grained control over network traffic within the Kubernetes cluster."
+  }
+}

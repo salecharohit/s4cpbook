@@ -1,0 +1,8 @@
+{
+  "label": "2.2 AWS Organizations",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "AWS Organizations enables centralized management of multiple AWS accounts, providing improved governance and billing management. This involves understanding its structure, setting up AWS Organizations, and establishing individual AWS accounts for effective resource and policy management across an organization."
+  }
+}

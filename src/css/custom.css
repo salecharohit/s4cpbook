@@ -93,3 +93,8 @@ a {
   transform: scale(1.05);
   transition-duration: 75ms;
 }
+
+/* Automatic Line Wrap for Code Blocks */
+code {
+  white-space : pre-wrap !important;
+}

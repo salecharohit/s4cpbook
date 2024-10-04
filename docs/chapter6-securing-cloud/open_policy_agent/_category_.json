@@ -1,0 +1,8 @@
+{
+  "label": "6.2 - Open Policy Agent",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Open Policy Agent (OPA) is a policy engine used to enforce fine-grained access controls and compliance policies across various systems. For Terraform, OPA can define and enforce policies such as ensuring the use of IMDSv2, preventing 0.0.0.0/0 in security groups, and checking for excessive privileges. OPA integrates with tools like GitHub Actions for automated policy enforcement and testing, ensuring infrastructure adheres to security and compliance standards during deployment."
+  }
+}

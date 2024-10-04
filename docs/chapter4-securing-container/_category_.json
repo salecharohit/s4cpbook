@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 4 - Securing Container",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "Set up AWS ECR and IAM Role for service account access using OIDC, ensure Dockerfile security best practices, validate them with Semgrep, and build and scan secure Docker images with Trivy in GitHub Actions."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "6.1 - Service Control Policy",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Service Control Policies (SCPs) are used in AWS Organizations to set permission boundaries that govern access across accounts. They can enforce security measures, such as default S3 and EBS encryption, restrict EC2 instance types, and limit user creation to specific accounts like Security. SCPs also help lock access to only required regions, ensuring that resources and actions align with organizational security and compliance requirements."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Chapter 6 - Securing Cloud",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Enforce encryption and permission boundaries for AWS resources using Service Control Policies (SCPs) and implement runtime security in Terraform with OPA (Open Policy Agent) for a policy-driven, validated infrastructure."
+  }
+}
