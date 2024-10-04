@@ -98,3 +98,9 @@ a {
 code {
   white-space : pre-wrap !important;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
