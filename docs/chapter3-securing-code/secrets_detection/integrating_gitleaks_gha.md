@@ -36,7 +36,7 @@ git commit -m "triggering gitleaks"
 git push --set-upstream origin gitleaks
 ```
 
-## ⬆️ Create PR
+## 🔄 Create PR
 
 Please create a PR from `gitleaks` branch to `main` branch
 

@@ -40,7 +40,7 @@ git commit -m "integrating semgrep"
 git push --set-upstream origin semgrep
 ```
 
-## ⬆️ Create PR
+## 🔄 Create PR
 
 Let's create a PR from `semgrep` branch to `main` branch
 

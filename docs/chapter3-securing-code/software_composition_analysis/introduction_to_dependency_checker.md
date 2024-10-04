@@ -34,7 +34,7 @@ git commit -m "integrating dependency-check in gha"
 git push --set-upstream origin sca
 ```
 
-## ⬆️ Create PR
+## 🔄 Create PR
 
 - Let's create a PR from `sca` branch to `main` branch
 

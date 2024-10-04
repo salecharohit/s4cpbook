@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Now that we are sure that our code works in `dev` its time to push our changes in `prod` environment.
 
-## ➕ Create PR dev to prod
+## 🔄 Create PR dev to prod
 
 - Let's visit github.com and now Create a New Pull Request
 
