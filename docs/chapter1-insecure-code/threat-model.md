@@ -18,16 +18,14 @@ Let's dive a bit deeper into each of these potential threats and security issues
 3. **Sensitive Information Leakage through Code**:
    - Insecure handling of sensitive data, such as API keys or user credentials, can lead to data leaks. Proper encryption and access controls are critical to prevent this.
 
-## 📦 Container
+## 🐳 Container
 
-1. **Containers Running with Root Privileges**:
-   - Running containers with root privileges is risky as it provides potential attackers with broader system access. Best practices involve running containers with the least privilege necessary.
-
-2. **Invalidated Container Base Images**:
-   - Failing to update or validate base images can result in outdated software with known vulnerabilities. Regularly update and validate base images to ensure security.
-
-3. **Vulnerable Base Images**:
-   - Base images should be selected carefully and kept up-to-date to avoid deploying containers with known security issues.
+1. **Image Mutability**
+   - Docker image is being pushed into the registry and pulled for execution using the `latest` tag. This violates the property of immutability as any change , benign or malicious , will automatically start running in the live environment.
+2. **Insecure Dockerfiles**
+   - Dockerfile are configured to run containers with root privileges. Running containers with root privileges is risky as it provides potential attackers with broader system access. Best practices involve running containers with the least privilege necessary. Moreover, base images are being pulled from unknown sources risking the supply chain security as well.
+3. **Container Security**
+   - Docker base image being pulled may have vulnerable packages that could be exploited. Base images should be selected carefully and kept up-to-date to avoid deploying containers with known security issues.
 
 ## ⚓ Cluster
 

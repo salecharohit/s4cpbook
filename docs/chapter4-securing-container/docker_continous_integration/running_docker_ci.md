@@ -15,7 +15,7 @@ git commit -m "running docker ci"
 git push
 ```
 
-## View Docker GHA
+## 🧱 Immutable Docker Image
 
 - Visit github.com and Click on Summary and view the Docker Github Actions workflow that we just pushed.
 - It should output the docker image value as shown below

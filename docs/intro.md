@@ -24,9 +24,9 @@ The course is tailored for individuals deeply involved in developing, deploying,
 
 ## 3️⃣ Three Takeaways
 
-- Comprehensive Security Framework Understanding: Gain a profound understanding of how code, containers, clusters, and the cloud interconnect from a security standpoint. Learn to recognize the inherent security implications and develop strategies to fortify these components within the ecosystem.
-- Practical Implementation of Security via Github Actions: Access a collection of practical, readily implementable GitHub Actions designed to construct security guardrails within their existing environments. These actions provide a streamlined approach to integrate security measures into the development and deployment pipeline.
-- Security Tool Starter Kit : Acquire a starting point for essential security tools such as Semgrep, OPA (Open Policy Agent), Kyverno, and Gitleaks. Understand how these tools function and leverage them as a foundation to build customized security solutions tailored to your team's requirements.
+- **Comprehensive Security Framework Understanding**: Gain a profound understanding of how code, containers, clusters, and the cloud interconnect from a security standpoint. Learn to recognize the inherent security implications and develop strategies to fortify these components within the ecosystem.
+- **Practical Implementation of Security via Github Actions**: Access a collection of practical, readily implementable GitHub Actions designed to construct security guardrails within their existing environments. These actions provide a streamlined approach to integrate security measures into the development and deployment pipeline.
+- **Security Tool Starter Kit** : Acquire a starting point for essential security tools such as Semgrep, OPA (Open Policy Agent), Kyverno, and Gitleaks. Understand how these tools function and leverage them as a foundation to build customized security solutions tailored to your team's requirements.
 
 ## 📖 Student Requirements
 

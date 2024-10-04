@@ -43,12 +43,6 @@ As a Security best practice, we must not use Root User access for any actions.
 
 ![](img/generate_keys.png)
 
-:::danger Access Keys
-
-We need this key only for the initial setup , post which they can be destroyed or deactivated later when we've setup everything as code.
-
-:::
-
 ## ✨ Configure AWS Admin Profile
 
 - Let's configure the `admin` account access keys in your local computer. Ensure you have [AWS CLI Installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)

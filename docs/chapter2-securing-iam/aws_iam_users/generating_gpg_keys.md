@@ -16,7 +16,7 @@ Preparing the code for creating AWS IAM Users.
 
 ```bash
 cd ~/playground
-cp -r ~/s4cpcode/chapter2/2D/. .
+cp -r ~/s4cpcode/chapter2/2D/. ~/playground/
 ```
 
 :::warning GPG Username and Email

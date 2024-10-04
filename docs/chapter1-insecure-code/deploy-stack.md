@@ -59,7 +59,7 @@ This is going to be the main folder for all the chapters and contents. As we pro
 
 ```bash
 cd ~/playground
-cp -r ~/s4cpcode/chapter1/. .
+cp -r ~/s4cpcode/chapter1/. ~/playground/
 ```
 
 ![](img/copy_chapter1.png)

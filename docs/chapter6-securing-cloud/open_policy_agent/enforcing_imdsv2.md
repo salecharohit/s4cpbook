@@ -82,7 +82,7 @@ The command above is using OPA to evaluate a Rego policy against a specific inpu
 
 So, the command is instructing OPA to evaluate the "deny" rule from the "ec2_imdsv2_policy" package in the "imdsv2.rego" policy file using the input data from "input.json." The results will be displayed in a human-readable "pretty" format, indicating whether the policy is satisfied or if there are violations.
 
-## The Catch
+## 🕸️ The Catch
 
 In the previous OPA policy what we were trying to check is presence of `metadata_options[0]` variable to check if IMDSv2 is enabled or not. This can however be misleading as we can specify something like below 
 

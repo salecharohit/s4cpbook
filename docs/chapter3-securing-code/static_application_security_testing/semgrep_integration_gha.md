@@ -26,7 +26,7 @@ Let's prepare the code now for running semgrep.
 cd ~/playground/
 git checkout main
 git pull
-cp -r ~/s4cpcode/chapter3/3B/. .
+cp -r ~/s4cpcode/chapter3/3B/. ~/playground/
 ```
 
 - The commands below will create a new branch called `semgrep` and push the changes into the branch.

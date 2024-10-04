@@ -12,7 +12,7 @@ Let's go ahead and setup our AWS Organization. Below command will setup the code
 
 ```bash
 cd ~/playground
-cp -r ~/s4cpcode/chapter2/2B/. .
+cp -r ~/s4cpcode/chapter2/2B/. ~/playground/
 ```
 
 ## ✏️ Edit accounts.auto.tfvars

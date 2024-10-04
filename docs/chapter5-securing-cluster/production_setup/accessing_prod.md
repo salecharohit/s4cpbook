@@ -6,13 +6,13 @@ sidebar_position: 2
 
 - Let's now access the application from the browser and CLI
 
-## Viewing the Application
+## 👁️ Viewing the Application
 
 The application once deployed, can be accessed at [https://prod.yourdomain.com](https://prod.yourdomain.com)
 
 ![](img/prod_app_on.png)
 
-## Open AWS Credentials File
+## 📂 Open AWS Credentials File
 
 - Open the aws credentials file using the below command.
 
@@ -20,7 +20,7 @@ The application once deployed, can be accessed at [https://prod.yourdomain.com](
 nano ~/.aws/credentials
 ```
 
-## Configure AWS Credentials File
+## ⚙️ Configure AWS Credentials File
 
 Add the below lines of code into the file as we need to assume the specific role to access the prod account.
 
@@ -32,7 +32,7 @@ source_profile = admin
 
 ![](img/adding_terraform_admin.png)
 
-## Accessing Kubernetes from CLI
+## 🔑 Accessing Kubernetes from CLI
 
 Using the below commands we can now access the kubernetes using kubectl
 

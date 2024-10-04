@@ -88,13 +88,13 @@ Below is the expected error message after running `terraform destroy` on the glo
 
 - Destroy the Route53 zone of the [domain](/docs/chapter0-the-setup/domain-setup.md) that was created using the command below
 
-> Replace domain-name in the command below with your domain name.
+> Replace `s4cp.com` in the command below with your domain name.
 
 ```bash
-aws route53 list-hosted-zones-by-name --dns-name <domain-name> --query "HostedZones[0].Id" --output text | xargs -I {} sh -c 'aws route53 list-resource-record-sets --hosted-zone-id {} --query "ResourceRecordSets[?Type != '\''NS'\'' && Type != '\''SOA'\'']" --output json | jq -r ".[] | {Action: \"DELETE\", ResourceRecordSet: .}" | jq -s "{Changes: .}" > /tmp/change-batch.json && aws route53 change-resource-record-sets --hosted-zone-id {} --change-batch file:///tmp/change-batch.json && aws route53 delete-hosted-zone --id {} && rm /tmp/change-batch.json'
-```
 
-![](img/delete_route53.png)
+aws route53 delete-hosted-zone --id $(aws route53 list-hosted-zones --query "HostedZones[?Name == 's4cp.com.'].Id" --output text | sed 's|/hostedzone/||')
+
+```
 
 ## 5. Destroy State Infrastructure
 
@@ -119,4 +119,4 @@ aws iam delete-access-key --user-name <username> --access-key-id <access-key-id>
 
 ![](img/delete_iam_keys.png)
 
-**That's All Folks**
+**That's All Folks** please don't forget to show some 💖 love and [🐦 tweet](https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cpbook)

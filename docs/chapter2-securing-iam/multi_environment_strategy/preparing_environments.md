@@ -8,7 +8,7 @@ For the purpose of this training we are implementing the multi-environment strat
 
 ```bash
 cd ~/playground
-cp -r ~/s4cpcode/chapter2/2E/. .
+cp -r ~/s4cpcode/chapter2/2E/. ~/playground
 ```
 
 :::warning

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# K8s Runtime Security using Kyverno
+# K8s Runtime Security
 
 Kubernetes runtime security, with the help of admission controllers, enforces policies on running workloads, ensuring they comply with security best practices. This includes managing network access, scanning for vulnerabilities, adapting to changing requirements, and responding to security incidents.
 

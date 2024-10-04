@@ -10,8 +10,6 @@ We'll be exclusively using Github for CI (Continuous Integration) and Github Act
 
 In this section we'll setup the Github repository and configure Github access which will be used throughout the course.
 
-### 🍔 Configure Github SSH Key <i class="fa fa-flask" aria-hidden="true"></i>
-
 - Open the terminal by clicking on hamburger menu at extreme top-left of , Terminal , New Terminal.
 - Configure and copy the SSH Key using the following commands
 

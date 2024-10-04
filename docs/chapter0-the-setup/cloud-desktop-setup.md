@@ -43,6 +43,7 @@ key_name                    = "ubuntu"
 4. Ensure a strong password is configured in L8 as it'll be a public facing website where your VSCode interface will be accessible on `https://ide.domain.com/code/`
 5. `key_name` on L9 is arbitrary and can be set as `ubuntu` 
 6. Once your done adding the relevant information we need to remove the .bak so that terraform can read the file for processing
+   
 ```bash
 mv terraform.auto.tfvars.bak terraform.auto.tfvars
 ```
@@ -71,7 +72,7 @@ terraform apply --auto-approve
 
 ## 🚪 Accessing the Web-IDE
 
-You can now access your IDE on [https://ide.your-domain.com/code/](https://ide.your-domain.com/code/) 
+You can now access your IDE on `https://ide.your-domain.com/code/` 
 
 ![Accessing IDE](img/accessing_ide.png)
 

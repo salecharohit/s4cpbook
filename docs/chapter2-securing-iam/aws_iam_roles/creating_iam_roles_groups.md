@@ -12,7 +12,7 @@ Let's go ahead and setup the AWS IAM Roles and Groups as described above. This w
 
 ```bash
 cd ~/playground
-cp -r ~/s4cpcode/chapter2/2C/. .
+cp -r ~/s4cpcode/chapter2/2C/. ~/playground
 ```
 
 ## ✏️ Edit dns.auto.tfvars

@@ -17,11 +17,7 @@ Following are the components that will be setup in this section on AWS
 - **Security Groups** : Security groups for controlling network access.
 - **K8s Components** : Deployments,Service and Ingress resources created for running the application. All these components are also deployed in a specific namespace i.e. `s4cp`.
 
-## Setup Prod Environment
-
-Let's start preparing the Prod environment as discussed above
-
-## Prepare the Code
+## 🛠️ Prepare the Code
 
 Prepare the code necessary for provisioning the kubernetes environment 
 
@@ -32,7 +28,7 @@ git pull
 cp -r ~/s4cpcode/chapter5/5A/. ~/playground/
 ```
 
-## Add Docker Image
+## ➕ Add Docker Image
 
 - Copy the Docker Image name saved in the [last chapter](/docs/chapter4-securing-container/golden_docker_images/dockerfile_security_gha.md)
 - Open `infra/prod.tfvars` and add the variable `app_docker_img` with the value copied from above.
@@ -43,13 +39,13 @@ cp -r ~/s4cpcode/chapter5/5A/. ~/playground/
 This is an extremely critical step and must be executed with caution.
 :::
 
-## Add Domain Name
+## 🌐 Add Domain Name
 
 - Open `infra/terraform.auto.tfvars` and add the domain name that [you've configured](/docs/chapter0-the-setup/domain-setup.md) 
 
 ![](img/adding_domain_name.png)
 
-## Provisioning the Infrastructure
+## ✨ Provisioning the Infrastructure
 
 Let's now go ahead and push the changes so that GHA workflow will be triggered and our Production infrastructure with the services will be provisioned. The command below needs to be executed and will prompt you to check if you have updated the docker image in `infra/prod.tfvars`
 
@@ -61,7 +57,7 @@ git commit -m "checking out prod"
 git push
 ```
 
-## View GHA
+## 👁️ View GHA
 
 Provisioning this infrastructure would take about 15 minutes. So we can view the progress on GHA
 

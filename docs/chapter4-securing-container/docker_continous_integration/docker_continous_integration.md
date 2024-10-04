@@ -18,8 +18,8 @@ This process enhances consistency, efficiency, and reliability in software devel
 
 From the perspective of security there are three main aspects in this process that is worth elaborating and something we'll be implementing in this chapter.
 
-- Docker Image Immutability : Docker Image Immutability refers to the principle that once a Docker image is created, it should remain unchanged and not be modified. This is important to prevent unauthorized changes from running in the environment.
+- **Docker Image Immutability** : Docker Image Immutability refers to the principle that once a Docker image is created, it should remain unchanged and not be modified. This is important to prevent unauthorized changes from running in the environment.
 
-- Dockerfile Security : Dockerfile, which contains predefined instructions must follow security best practices like running containers with non-root privileges. We'll explore this in next section.
+- **Dockerfile Security** : Dockerfile, which contains predefined instructions must follow security best practices like running containers with non-root privileges. We'll explore this in next section.
 
-- Container Security : Before the image is pushed onto the registry, it should scanned for vulnerabilities that exist in the base docker operating system. We'll explore this in an upcoming section.
+- **Container Security** : Before the image is pushed onto the registry, it should scanned for vulnerabilities that exist in the base docker operating system. We'll explore this in an upcoming section.

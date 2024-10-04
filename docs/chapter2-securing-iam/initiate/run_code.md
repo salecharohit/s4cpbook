@@ -26,7 +26,7 @@ Below command will prepare the code for setting up the S3 and DynamoDB backend t
 
 ```bash
 cd ~/playground
-cp -r ~/s4cpcode/chapter2/2A/. .
+cp -r ~/s4cpcode/chapter2/2A/. ~/playground/
 ```
 
 - We need to edit the file `playground/initiate/oidc.tf` and edit replace `<username>` with your action Github username.
@@ -52,12 +52,6 @@ terraform apply --auto-approve
 Expected Output.
 
 ![](img/initiate_run.png)
-
-:::warning Admin Keys
-
-This is the last time we'll be using the Admin Keys to create something.
-Towards the end of the course, we'll scroll back here and delete all the resources created. Till then we need these keys.
-:::
 
 ## 📋 Copy Output to Notes.md
 

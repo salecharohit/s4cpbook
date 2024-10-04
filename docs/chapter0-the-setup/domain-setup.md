@@ -4,14 +4,14 @@ sidebar_position: 2
 
 # 0.2 Domain Setup
 
-For running this course we will need a Top-Level Domain name or a Sub-Domain whose NameServers are in your control.
+For running this course we will need a **Top-Level Domain** name or a **Sub-Domain** whose NameServers are in your control.
 If you donot have a domain , I'd recommend to buy it from any public Domain Registrar. If you already have a domain, then you can simply add a sub-domain and continue with this course. 
 
 For the purpose of this course,I purchased a domain called `s4cp.com` and will be using the same for all examples. You are expected to use your own domain/sub-domain by simply replacing it with `s4cp.com` 
 
 :::danger Domain or Sub-Domain
 
-Follow any one of the below setup and not both, depending on what you'd wish to use, either a domain or a sub-domain. Also, please ensure you've completed the [AWS Setup](/docs/chapter0-the-setup/aws-setup.md#) page prior to moving ahead with this page.
+Follow any one of the below setup and not both, depending on what you'd wish to use, either a top-level domain or a sub-domain. Also, please ensure you've completed the [AWS Setup](/docs/chapter0-the-setup/aws-setup.md#) page prior to moving ahead with this page.
 
 :::
 
@@ -87,7 +87,7 @@ Following are the sub-domains that will be created throughout this course if a s
 
 :::tip SubDomain Delegation
 
-Both the above techniques have different implications; for Top-Level Domain we are modifying the primary Nameserver records whereas for Subdomain we are only adding a Nameserver record against the subdomain. This adding of nameservers as a record in your DNS zone is also called as Subdomain Delegation. Effectively we are delegating the subdomain to another provider. An important point to note here is that not all DNS providers support this.
+Both the above techniques have different implications; for Top-Level Domain we are modifying the primary Nameserver records whereas for Subdomain we are only adding a Nameserver record against the subdomain. This adding of nameservers as a record in your DNS zone is also called as **Subdomain Delegation**. Effectively we are delegating the subdomain to another provider. An important point to note here is that not all DNS providers support this.
 
 :::
 
