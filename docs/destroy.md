@@ -92,7 +92,7 @@ Below is the expected error message after running `terraform destroy` on the glo
 
 ```bash
 
-aws route53 delete-hosted-zone --id $(aws route53 list-hosted-zones --query "HostedZones[?Name == 's4cp.com.'].Id" --output text | sed 's|/hostedzone/||')
+aws route53 list-hosted-zones-by-name --dns-name s4cp.com --query "HostedZones[0].Id" --output text | xargs -I {} sh -c 'aws route53 list-resource-record-sets --hosted-zone-id {} --query "ResourceRecordSets[?Type != '\''NS'\'' && Type != '\''SOA'\'']" --output json | jq -r ".[] | {Action: \"DELETE\", ResourceRecordSet: .}" | jq -s "{Changes: .}" > /tmp/change-batch.json && aws route53 change-resource-record-sets --hosted-zone-id {} --change-batch file:///tmp/change-batch.json && aws route53 delete-hosted-zone --id {} && rm /tmp/change-batch.json'
 
 ```
 
