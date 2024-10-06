@@ -84,7 +84,30 @@ Below is the expected error message after running `terraform destroy` on the glo
 
 :::
 
-## 4. Destroy Route53 Zone
+## 4. Destroy State Infrastructure
+
+- Destroy the state infrastructure and the OIDC IAM Role created in the [initiate](/docs/chapter2-securing-iam/initiate/run_code.md) chapter.
+
+```bash
+export AWS_PROFILE=admin
+cd ~/playground/initiate
+terraform init
+terraform destroy --auto-approve
+```
+
+## 5. Destroy My-Cloud-Desktop
+
+- Now moving back to your local machine where you installed my-cloud-desktop or the WEB-IDE.
+
+```bash
+# CD into location wherever you installed my-cloud-desktop.
+cd ~/my-cloud-desktop
+export AWS_PROFILE=admin
+terraform init
+terraform destroy --auto-approve
+```
+
+## 6. Destroy Route53 Zone
 
 - Destroy the Route53 zone of the [domain](/docs/chapter0-the-setup/domain-setup.md) that was created using the command below
 
@@ -96,18 +119,7 @@ aws route53 list-hosted-zones-by-name --dns-name s4cp.com --query "HostedZones[0
 
 ```
 
-## 5. Destroy State Infrastructure
-
-- Destroy the state infrastructure and the OIDC IAM Role created in the [initiate](/docs/chapter2-securing-iam/initiate/run_code.md) chapter.
-
-```bash
-export AWS_PROFILE=admin
-cd ~/playground/initiate
-terraform init
-terraform destroy --auto-approve
-```
-
-## 6. Delete Admin user Keys
+## 7. Delete Admin user Keys
 
 - Its recommended to delete the AWS Keys for the Admin user using the command below.
 
