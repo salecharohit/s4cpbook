@@ -73,7 +73,7 @@ Open `terraform.auto.tfvars` file as shown below and modify the `domain` field w
 - Next, we need the AWS Admin Access keys that were configured to spin up this cloud instance. We need to configure the same here too.
 
 ```bash
-aws profile --configure admin
+aws configure --profile admin
 AWS Access Key ID [None]: XXXXXXXXXXXXXXXXXXX
 AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Default region name [None]: us-east-2

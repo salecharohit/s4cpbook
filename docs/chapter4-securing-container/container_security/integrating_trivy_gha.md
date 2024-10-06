@@ -65,6 +65,23 @@ Once the complete Trivy and Docker Github actions complete, we can now view the 
 
 ![](img/trivy_report.png)
 
+
+## 📝 Make note of Docker Image
+
+Once the Docker Github Action workflow is complete, ensure to make a note of the docker image name in the output and paste it into the notes.md `Docker CI` section as shown below 
+
+- Open the Github Action for Docker that is executed after merge as shown below
+
+![](img/github_actions.png)
+
+- Copy the Docker image name as shown below and paste it into notes.md.
+
+![](img/copy_dockerfile.png)
+
+:::warning Docker Image
+
+Please ensure to note the above docker image name as we'll be requiring it to run it on the Kubernetes infrastructure in the next chapter.
+
 :::note End of Chapter 4
 
 That completes the Chapter 4, before you move to Chapter 5

@@ -46,22 +46,5 @@ View the PR Comments and it'll now show the semgrep docker rules have passed as 
 Let's now merge the PR and allow the Docker Github Action workflow continue to run.
 
 ![](img/merge_secure_dockerfile.png)
-
-## 📝 Make note of Docker Image
-
-Once the Docker Github Action workflow is complete, ensure to make a note of the docker image name in the output and paste it into the notes.md `Docker CI` section as shown below 
-
-- Open the Github Action for Docker as shown below
-
-![](img/gha_dockerfile.png)
-
-- Copy the Docker image name as shown below and paste it into notes.md.
-
-![](img/copy_dockerfile.png)
-
-:::warning Docker Image
-
-Please ensure to note the above docker image name as we'll be requiring it to run it on the Kubernetes infrastructure in the next chapter.
-
 :::
 
