@@ -38,7 +38,8 @@ The course is tailored for individuals deeply involved in developing, deploying,
 All requirements are mandatory.
 
 - Domain Name : This course heavily relies in building a practical application hence, a domain name where you can control the DNS Name servers is a must. If you have a domain name, you could also use a sub-domain name provided your DNS provider supports setting of NS records for sub-domains.
-- AWS Account : A fresh new AWS account is a must. Course heavily relies on the fact that your AWS Organisation is **unset**. A budget of approximately 10-15 USD will be needed for running services which are not part of AWS free-tier like Kubernetes and Route53. **Offcourse this approximation considers the fact that you've executed this entire course only once.**. - Google Authenticator/Duo/Authy or any other MFA app that is supported by AWS IAM.
+- AWS Account : A fresh new AWS account is a must. Course heavily relies on the fact that your AWS Organisation is **unset**. A budget of approximately 10-15 USD will be needed for running services which are not part of AWS free-tier like Kubernetes and Route53. **Offcourse this approximation considers the fact that you've executed this entire course only once.**.
+- Google Authenticator/Duo/Authy or any other MFA app that is supported by AWS IAM.
 - Personal (Free) Github Account (Please do not use enterprise accounts)
 - A laptop with [AWS CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) and [Terraform > 1.0](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) installed. This will be used for the initial setup for the Web-based IDE
 
