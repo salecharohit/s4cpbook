@@ -59,7 +59,7 @@ ssh github.com
 
 ## 🌟 Create a Github Repository
 
-- Create a new repository by visiting the link <a href="https://github.com/new" target="_blank">https://github.com/new</a> and name it as `playgroud`
+- Create a new repository by visiting the link <a href="https://github.com/new" target="_blank">https://github.com/new</a> and name it as `playground`
 - Ensure visibility is private.
 
 :::danger Repository Name
