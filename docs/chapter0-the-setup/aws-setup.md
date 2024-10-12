@@ -31,7 +31,7 @@ As a Security best practice, we must not use Root User access for any actions.
 
 ## 🔑 AWS Access Keys
 
-- Logout of Root account and login using the `admin` account credentials created. Visit the IAM Page and visit the admin user page as shown below
+- Visit the IAM Page and visit the admin user page as shown below
 
 ![](img/visit_admin_user.png)
 
