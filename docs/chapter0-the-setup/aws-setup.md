@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 0.1 AWS Setup
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=81s)
+
 In this section we'll look into how to setup our AWS account and what is the information needed to move ahead with the course.
 Ensure you've read through the [Disclaimer](docs/intro.md#%EF%B8%8F-disclaimer) and [How To Use this Course](docs/intro.md#%EF%B8%8F-how-to-follow-this-course-)
 
