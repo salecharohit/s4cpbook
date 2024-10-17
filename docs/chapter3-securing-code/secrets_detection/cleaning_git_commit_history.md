@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Cleaning Git Commit History
+# 3.3.4 Cleaning Git Commit History
 
 Leaking secrets in code is very much a common scenario however the problem that arises is the way git work, all your commits and the corresponding data is always available for viewing. Hence, by simply masking your sensitive information in X+1 commit won't hide it in commit X !
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Creating K8s RBAC
+# 5.2.2 Creating K8s RBAC
 
 Now that we've learnt about Kubernetes RBAC let's get to create it
 

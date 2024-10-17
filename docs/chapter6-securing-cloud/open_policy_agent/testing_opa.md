@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Testing OPA
+# 6.2.2 Testing OPA
 
 Let's try out OPA by getting some hands-on experience.
 

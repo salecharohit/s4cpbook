@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction to OPA
+# 6.2.1 Introduction to OPA
 
 Managing cloud infrastructure is a complex task, especially when it comes to ensuring security, compliance, and governance. As organizations adopt Infrastructure as Code (IaC) practices using Terraform, the need for effective policy enforcement becomes paramount. This is where the Open Policy Agent (OPA) comes into play.
 

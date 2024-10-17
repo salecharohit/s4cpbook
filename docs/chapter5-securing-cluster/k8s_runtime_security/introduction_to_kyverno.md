@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Introduction to Kyverno
+# 5.4.2 Introduction to Kyverno
 
 [Kyverno](https://github.com/kyverno/kyverno/) is an admission controller for Kubernetes that specializes in policy management. It allows you to enforce custom policies and rules during the admission process, ensuring that resources conform to your organization's security, compliance, and operational requirements. Kyverno's flexibility and extensibility make it a powerful tool for fine-grained policy enforcement within Kubernetes clusters, contributing to enhanced security and governance.
 

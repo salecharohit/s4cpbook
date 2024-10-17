@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Encrypting K8s Secrets
+# 5.3.1 Encrypting K8s Secrets
 
 AWS EKS being a managed service it becomes extremely critical to logically segregate customer data or any information that is being stored. The best way to logically segregate this information is to the encrypt it using encryption keys that we have more control over.
 Hence, in this section we'll look at how we can encrypt kubernetes secrets using AWS KMS and also store sensitive information like database passwords in a separate service like AWS Secrets Manager. 

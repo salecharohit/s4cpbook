@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Setting Up Infrastructure
+# 5.1.1 Setting Up Infrastructure
 
 ![](img/5A_8.png)
 

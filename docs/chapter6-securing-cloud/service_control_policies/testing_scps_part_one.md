@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Testing SCPs - Part One
+# 6.1.2 Testing SCPs - Part One
 
 Let's now test out each of the SCPs while at the same time also understand how the SCPs are implemented by viewing their specific code.
 

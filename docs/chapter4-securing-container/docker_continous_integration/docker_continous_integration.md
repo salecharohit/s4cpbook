@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Docker Continuous Integration
+# 4.1.1 Docker Continuous Integration
 
 Continuous Integration (CI) plays a crucial role in modern software development by automating the process of building Docker images. Here's a brief overview along with a simple diagram
 

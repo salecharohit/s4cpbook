@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Integrating Trivy with GHA
+# 4.3.2 Integrating Trivy with GHA
 
 Let's integrate trivy in the Github Actions using a custom workflow `trivy.yaml` using the below command
 

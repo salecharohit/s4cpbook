@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Secure Dockerfile
+# 4.2.3 Secure Dockerfile
 
 Let's now fix these issues by updating the dockerfile with the following command.
 

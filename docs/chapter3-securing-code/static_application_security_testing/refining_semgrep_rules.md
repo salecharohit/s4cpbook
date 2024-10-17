@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Refining Semgrep Rules
+# 3.1.3 Refining Semgrep Rules
 
 **Semgrep** is a powerful tool for static analysis that allows developers to write custom rules for code scanning and detect vulnerabilities, bugs, or code patterns. However, running Semgrep on large codebases can sometimes result in unnecessary findings on third-party code or other irrelevant areas. To optimize your Semgrep usage, it’s essential to refine the rules to focus on relevant code and enforce coding practices more effectively. Below are two strategies you can employ:
 

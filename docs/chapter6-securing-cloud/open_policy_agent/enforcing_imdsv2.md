@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Enforcing IMDSV2 Through OPA
+# 6.2.3 Enforcing IMDSV2 Through OPA
 
 Below is the REGO file which we'll execute next that will help us identify any EC2 instances that donot have IMDSv2 enabled.
 

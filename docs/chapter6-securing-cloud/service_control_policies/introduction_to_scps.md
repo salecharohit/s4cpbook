@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction to SCPs
+# 6.1.1 Introduction to SCPs
 
 Service Control Policies (SCPs) are a fundamental component of AWS Organizations, a service that enables you to centrally manage and govern multiple AWS accounts. SCPs are a set of policy documents that help you control what services and actions can be performed within member AWS accounts. These policies work alongside Identity and Access Management (IAM) policies to provide fine-grained control over actions and resources.
 

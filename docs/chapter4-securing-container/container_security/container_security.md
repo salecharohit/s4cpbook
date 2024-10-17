@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Container Security
+# 4.3.1 Container Security
 
 Container image security is essential to protect applications and data in containerized environments. Here's why it's necessary:
 

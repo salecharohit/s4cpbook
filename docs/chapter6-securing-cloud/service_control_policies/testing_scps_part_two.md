@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Testing SCPs - Part Two
+# 6.1.3 Testing SCPs - Part Two
 
 ## ❌ Restrict AWS Services and Regions
 

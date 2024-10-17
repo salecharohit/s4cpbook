@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Accessing Prod Infrastructure
+# 5.1.2 Accessing Prod Infrastructure
 
 - Let's now access the application from the browser and CLI
 

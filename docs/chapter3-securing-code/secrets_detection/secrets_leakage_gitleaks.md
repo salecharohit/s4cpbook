@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Secrets Leakage and Gitleaks
+# 3.3.1 Secrets Leakage and Gitleaks
 
 ## 🚰 Secrets Leakage - Cause and Effect
 

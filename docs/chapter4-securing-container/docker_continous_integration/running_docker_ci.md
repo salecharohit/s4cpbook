@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Running Docker CI
+# 4.1.3 Running Docker CI
 
 - Now the final step for building our docker images and that is to push the `docker-prod.yaml` workflow that will build the docker images and consequently push them to the ECR registry (for Prod)
 

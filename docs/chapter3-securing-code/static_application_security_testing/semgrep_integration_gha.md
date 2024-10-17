@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Semgrep Integration with GHA
+# 3.1.2 Semgrep Integration with GHA
 
 Now let's integrate semgrep with Github Actions and also look at how we can fix the issues that've been identified.
 

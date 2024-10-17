@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Dockerfile Security Github Actions
+# 4.2.2 Dockerfile Security Github Actions
 
 Let's run the rules discussed in the previous section as part of our Semgrep workflow and observe the output. The commands below will add these two rules to `tools\semgrep` folder and run the SAST workflow and also create a separate branch called `dockersec`
 

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Network Security Policy
+# 5.5.3 Network Security Policy
 
 The Network Security Policy that we now need to apply in order to enable communication within the subjected namespace is as shown below.
 

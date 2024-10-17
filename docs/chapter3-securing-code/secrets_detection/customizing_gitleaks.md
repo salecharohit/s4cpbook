@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Customizing Gitleaks
+# 3.3.3 Customizing Gitleaks
 
 Uptil now we've been using the default config that comes along with Gitleaks of all the regexes that help identify secrets. Here is the link of the [default config](https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml)
 

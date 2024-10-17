@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Introduction to Calico
+# 5.5.2 Introduction to Calico
 
 Calico is an open-source networking and security solution designed to enhance the networking capabilities of Kubernetes clusters, including those running on AWS EKS with the Default VPC CNI. It offers advanced networking features, fine-grained network policies, and robust security controls, making it a valuable choice for organizations seeking to strengthen the security and control of their EKS clusters.
 

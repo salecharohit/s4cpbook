@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
-# Accessing Kubernetes
+# 5.2.3 Accessing Kubernetes
 
 Let's now access kubernetes using CLI for both our users `goku` and `vegeta`
 

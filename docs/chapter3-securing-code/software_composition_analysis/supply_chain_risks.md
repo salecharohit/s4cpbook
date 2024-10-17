@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Supply Chain Risks
+# 3.2.1 Supply Chain Risks
 
 ## ❗ What are Supply Chain Risks ?
 
