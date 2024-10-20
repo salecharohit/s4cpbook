@@ -117,7 +117,7 @@ const config = {
             to: 'https://www.flaticon.com/free-icons/shipping-and-delivery',
           },
         ],
-        copyright: `All views and opinions expressed in this blog are solely those of the author, <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha</a >, and not related to any current or past employer.`,
+        copyright: `All views and opinions expressed in this blog are solely those of the author, <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha</a >.`,
       },
       prism: {
         theme: prismThemes.github,
