@@ -62,3 +62,4 @@ For Ex :
         `AWS Account Keys` -> Section
 
 - Each chapter/page/section has been arranged sequentially and needs to be followed completely one after the other. If you miss or jump ahead,code will not work. Hence, please follow each chapter/page/section to its fullest in order to complete the course.
+- Each section starts with a Video link marked as [Youtube 📺](https://youtu.be/Am9417a87zU) where video instructions of performing those steps are highlighted.

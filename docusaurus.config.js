@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://s4cpbook.rohitsalecha.com',
+  url: 'https://s4cpaws.rohitsalecha.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -117,8 +117,7 @@ const config = {
             to: 'https://www.flaticon.com/free-icons/shipping-and-delivery',
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()
-        } - <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha</a > `,
+        copyright: `All views and opinions expressed in this blog are solely those of the author, <a href="https://rohitsalecha.com" target = "_blank" rel = "noopener" > Rohit Salecha</a >, and not related to any current or past employer.`,
       },
       prism: {
         theme: prismThemes.github,
