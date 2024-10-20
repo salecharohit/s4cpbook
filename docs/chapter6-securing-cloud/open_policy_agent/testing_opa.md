@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 6.2.2 Testing OPA
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=7545s)
+
 Let's try out OPA by getting some hands-on experience.
 
 ## 🛠️ Preparing Code

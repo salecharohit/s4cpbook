@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 5.5.3 Network Security Policy
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=7053s)
+
 The Network Security Policy that we now need to apply in order to enable communication within the subjected namespace is as shown below.
 
 ```toml

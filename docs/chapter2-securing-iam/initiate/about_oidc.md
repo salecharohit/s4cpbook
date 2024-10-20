@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 2.1.2 OIDC
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1117s)
+
 **OpenID Connect (OIDC)** is an identity layer built on top of the OAuth 2.0 protocol that allows clients, like applications, to verify the identity of end-users based on the authentication performed by an external provider. In AWS, an OIDC provider lets AWS services trust an external identity provider, such as GitHub, to authenticate and authorize access to AWS resources without needing to manage long-term credentials.
 
 When you create an OIDC provider in AWS and configure it with GitHub Actions, AWS trusts GitHub’s identity tokens issued during workflows. This setup allows GitHub Actions to assume a specific AWS IAM role with permissions to access AWS resources, instead of relying on static, long-term access keys embedded in workflows. As a result, access is granted dynamically, only during the execution of a workflow, significantly reducing the risk of exposing permanent credentials.

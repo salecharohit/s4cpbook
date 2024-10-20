@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 3.3.1 Secrets Leakage and Gitleaks
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=4194s)
+
 ## 🚰 Secrets Leakage - Cause and Effect
 
 The advent of Continuous Integration and Continuous Deployment (CI/CD) has revolutionized the software development landscape, enabling organizations to deliver updates and features at an unprecedented pace. However, with this increased automation and rapid deployment comes a heightened need for detecting secrets embedded in code.

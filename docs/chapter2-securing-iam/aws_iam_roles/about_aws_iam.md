@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 2.3.1 About AWS IAM Roles & Groups
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1696s)
+
 In the previous section we created Multiple different accounts let's now understand what are the different IAM Resources that will be created in this section to manage authorized access into our AWS infrastructure.
 
 ![](img/iam_roles_groups.png)

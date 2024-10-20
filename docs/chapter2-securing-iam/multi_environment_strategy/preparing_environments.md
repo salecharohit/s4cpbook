@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 2.5.2 Preparing the Environments
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2869s)
+
 For the purpose of this training we are implementing the multi-environment strategy by utilizing the DRY(don't repeat yourself) principle where we are using the same code base for dev and prod environment in the `infra` folder for setting up the respective environments using different CI/CD workflows and separate variable configurations. Let's see how that can be done.
 
 ```bash

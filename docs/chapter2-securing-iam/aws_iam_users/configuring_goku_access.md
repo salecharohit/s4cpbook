@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # 2.4.5 Configuring Goku Access
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2335s)
+
 In this section we'll configure Goku's Console as well as CLI access by changing the password and configuring MFA
 
 :::warning

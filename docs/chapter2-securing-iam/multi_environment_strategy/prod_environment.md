@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # 2.5.4 Prod Environment
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3209s)
+
 Now that we are sure that our code works in `dev` its time to push our changes in `prod` environment.
 
 ## 🔄 Create PR dev to prod

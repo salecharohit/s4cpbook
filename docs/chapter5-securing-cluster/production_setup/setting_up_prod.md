@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 5.1.1 Setting Up Infrastructure
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=5748s)
+
 ![](img/5A_8.png)
 
 Following are the components that will be setup in this section on AWS 

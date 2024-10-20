@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 2.3.2 Creating AWS IAM Roles and Groups
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1705s)
+
 In this section we'll be creating AWS IAM Roles and Groups that'll be used by Users in AWS accounts to access the specific resources.
 
 ## 🛠️ Setup AWS IAM Roles and Groups

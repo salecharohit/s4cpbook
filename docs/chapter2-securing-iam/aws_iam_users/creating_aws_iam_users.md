@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 2.4.3 Creating IAM Users
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2088s)
+
 Now that we have all the needed resources in code, let's push the code,create the resources and note down the output.
 
 ## Pushing the Changes for AWS IAM Users

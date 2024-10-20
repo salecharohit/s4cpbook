@@ -4,6 +4,8 @@ sidebar_position: 7
 
 # 2.4.7 AWS Key Management Process
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2855s)
+
 1. User generates his/her own GPG Keys and adds the public key into the `data` folder as [described here](/docs/chapter2-securing-iam/aws_iam_users/generating_gpg_keys.md#-copying-the-public-gpg-key-of-terraform)
 2. Updates the `user.auto.tfvars` file with the requisite information like username,public key name and the privileges.
 3. Checks in the code and creates a PR for approval.

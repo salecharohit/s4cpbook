@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 2.5.1 Multi-Environment Strategy
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2864s)
+
 We have so far created one identity account and two operational accounts viz. prod and dev where we'll deploy all the AWS resources.
 We need this multi-environment strategy so that we can verify our changes in the dev environment before pushing into the prod.
 This shall follow a specific pattern as described below

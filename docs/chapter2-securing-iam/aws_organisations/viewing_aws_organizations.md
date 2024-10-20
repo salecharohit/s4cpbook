@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 2.2.3 Viewing AWS Accounts
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1622s)
+
 In this section we need to now view the AWS Accounts and update the account IDs in notes.md file
 
 ## ✅ View and Verify the changes

@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # 0.4 Github Account Setup
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=600s)
+
 We'll be exclusively using Github for CI (Continuous Integration) and Github Actions (Continuous Delivery) throughout this course. Hence, its critical to set things up as required to run this training smoothly.
 
 ## 🔑 SSH Key

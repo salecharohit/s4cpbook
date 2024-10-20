@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 2.1.1 Terraform State
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1112s)
+
 In this section we'll explore Terraform state and why is it important to store it and also discuss some best practices of storing it.
 
 ## {} What is Terraform State ?

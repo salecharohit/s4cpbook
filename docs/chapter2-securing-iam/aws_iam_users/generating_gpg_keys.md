@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 2.4.2 Generating GPG Keys
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1948s)
+
 As stated earlier, we'll be allowing users to setup their AWS Access keys only through Terraform. However, the Access Key ID and Access Key Secret must not be stored in clear-text in our Terraform state file and also cannot be shared with the user in clear-text format.
 
 For that purpose, terraform allows us to share a public GPG key using which the AWS Secret Access Key is encrypted using the public GPG key. The base64 encoded and GPG encrypted key is then shared with the user, who is the only one who can decrypt the encrypted string and obtain the key.

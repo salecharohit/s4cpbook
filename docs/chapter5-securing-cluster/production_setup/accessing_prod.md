@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 5.1.2 Accessing Prod Infrastructure
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=5912s)
+
 - Let's now access the application from the browser and CLI
 
 ## 👁️ Viewing the Application

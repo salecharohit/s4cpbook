@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 2.2.2 Setting Up AWS Organisations
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1375s)
+
 In this section we'll activate our AWS Organization and create the required identity,prod and development 
 
 ## ⚙️ Setup AWS Organizations

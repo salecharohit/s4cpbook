@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ## ❗ What are Supply Chain Risks ?
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3913s)
+
 Supply chain risks refer to the potential threats and vulnerabilities that can impact an organization's product or service delivery through its supply chain. These risks can encompass a wide range of issues, including disruptions in the procurement process, logistical challenges, geopolitical uncertainties, and security breaches. Managing supply chain risks is critical for ensuring the reliability and resilience of the supply chain. It involves strategies to identify, assess, and mitigate these risks, as well as the development of contingency plans to maintain consistent operations even in the face of unexpected challenges. Effective supply chain risk management is essential for business continuity and protecting an organization's reputation and bottom line.
 
 If we take example of our own code based there are multiple touch points for Supply Chain risks that we need to be aware of

@@ -4,6 +4,8 @@ sidebar_position: 9
 
 # 💣 Destroy
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=8140s)
+
 Once you are done with the course , it is necessary to start destroying the infrastructure that was created as keeping it on can cost you. **So if you do wish to destroy the course infrastructure please follow the steps in the order provided else, you'll need to manually log into the console and destroy everything by hand.**
 
 ## 1. Destroy Prod Infrastructure

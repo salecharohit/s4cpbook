@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 3.3.3 Customizing Gitleaks
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=4301s)
+
 Uptil now we've been using the default config that comes along with Gitleaks of all the regexes that help identify secrets. Here is the link of the [default config](https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml)
 
 ## 🚫 Gitleaks won't catch

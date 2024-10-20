@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 0.3 Cloud Desktop Setup
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=415s)
+
 In order to follow this training there is a long list of tools that are required to be installed. Hence, I created [https://github.com/salecharohit/my-cloud-desktop](https://github.com/salecharohit/my-cloud-desktop) which contains everything to follow this training. Hence, strongly recommended to follow this and ensure that your Cloud Desktop is setup so that we can access our web-based IDE and follow along the training from there.
 
 :::danger

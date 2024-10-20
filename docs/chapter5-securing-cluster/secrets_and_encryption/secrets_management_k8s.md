@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 5.3.2 Secrets Management in EKS
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=6408s)
+
 Secrets management in Amazon EKS (Elastic Kubernetes Service) is simplified and enhanced by using AWS Secrets Manager and the Container Storage Interface (CSI) Secrets.
 
 The diagram below shows the relationship between the three components

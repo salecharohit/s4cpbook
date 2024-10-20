@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # 2.4.6 Configuring Vegeta Access
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2675s)
+
 In this section we'll configure Vegetas's Console as well as CLI access by changing the password and configuring MFA, on similar lines as done for [Goku](/docs/chapter2-securing-iam/aws_iam_users/configuring_goku_access.md)
 
 ## 🔓 Identity Account Access

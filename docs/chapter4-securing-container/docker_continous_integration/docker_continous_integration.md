@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 4.1.1 Docker Continuous Integration
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=4691s)
+
 Continuous Integration (CI) plays a crucial role in modern software development by automating the process of building Docker images. Here's a brief overview along with a simple diagram
 
 Git --> Github Actions --> Docker Image Build --> Docker Registry -> Images Deployed as Containers/Pods

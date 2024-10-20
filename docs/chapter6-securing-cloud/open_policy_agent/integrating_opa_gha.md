@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # 6.2.4 Integrating OPA with GHA
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=7863s)
+
 Now that we've seen the power of OPA and how it can help identify cloud misconfiguration before they are applied, let's look at how we can automated running OPA using Github Actions !
 
 ## 🛠️ Preparing Code

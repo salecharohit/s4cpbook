@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 6.1.2 Testing SCPs - Part One
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=7312s)
+
 Let's now test out each of the SCPs while at the same time also understand how the SCPs are implemented by viewing their specific code.
 
 ## ❌ Deny Creation of Users

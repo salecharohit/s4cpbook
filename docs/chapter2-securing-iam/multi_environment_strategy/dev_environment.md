@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 2.5.3 Dev Environment
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3034s)
+
 In this section we'll create an EC2 in the `dev` environment through the `dev` pipeline by pushing code into the `feature1` branch and merging the `feature1` branch with the `dev` branch.
 
 ## ⬆️ Push Changes to Feature1 branch

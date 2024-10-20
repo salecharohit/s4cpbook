@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 1.2 Accessing Application
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=963s)
+
 Once you see the below output, its indicative that your entire stack has been deployed and its time we access it !
 
 ![](img/stack_deploy.png)

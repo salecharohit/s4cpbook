@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # 1.4 Destroy Stack
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1063s)
+
 Let's destroy this insecure app as we'll now build security ground up
 
 ## 🪓 Terraform Destroy

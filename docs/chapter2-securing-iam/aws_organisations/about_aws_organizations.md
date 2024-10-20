@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 2.2.1 About AWS Organisations
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1365s)
+
 AWS Organizations is a service provided by Amazon Web Services (AWS) that helps you manage multiple AWS accounts within your organization.
 
 - Account Management: Centralized management of multiple AWS accounts.

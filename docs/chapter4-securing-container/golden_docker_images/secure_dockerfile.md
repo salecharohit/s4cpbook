@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 4.2.3 Secure Dockerfile
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=5248s)
+
 Let's now fix these issues by updating the dockerfile with the following command.
 
 ```bash

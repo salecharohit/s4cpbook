@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # 2.4.4 Decrypting GPG Keys
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=2185s)
+
 In this section we'll perform the most critical task of extracting the AWS Access Keys and accessing the AWS Accounts through CLI.
 
 ## 🔧 Extracting AWS Keys for Goku

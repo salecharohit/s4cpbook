@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 4.1.2 ECR IAM Role
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=4695s)
+
 In order to be able to push our images into AWS ECR,Github Actions will need the requisite permissions to be able to interact with AWS. For this purpose we shall create a separate IAM Role with OIDC integration just for the purpose of interacting with ECR. 
 
 :::tip Least Privelege

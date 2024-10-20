@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 3.3.2 Integrating Gitleaks with GHA
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=4204s)
+
 In this section let's explore how can we practically integrate Gitleaks with Github Actions utilising both the scenarios discussed earlier.
 
 ## ✅ Prepare the Code

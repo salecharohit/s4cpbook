@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 6.1.3 Testing SCPs - Part Two
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=7387s)
+
 ## ❌ Restrict AWS Services and Regions
 
 - Restrict AWS Services and Regions to specific values only

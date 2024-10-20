@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 2.4.1 About AWS IAM Users
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1928s)
+
 Now that we've created the IAM Roles and Groups, let's create users that will be using these roles and groups to complete the Role-Based Access Control that we would like to implement.
 
 ## 👥 AWS IAM Users RBAC

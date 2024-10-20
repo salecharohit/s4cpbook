@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 5.4.3 Running Kyverno
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=6649s)
+
 Let's practically run the provided Kyverno policy and test it out real-time.
 
 ## ⚡ Installing Kyverno

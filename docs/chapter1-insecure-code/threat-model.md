@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 1.3 Threat Model
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=1049s)
+
 Let's dive a bit deeper into each of these potential threats and security issues across the four pillars of a product:
 
 ## 📄 Code

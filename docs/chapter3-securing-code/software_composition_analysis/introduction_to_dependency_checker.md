@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 3.2.2 Introduction to Dependency-Checker
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3919s)
+
 Dependency-Checker is a valuable tool in the realm of software security. It is designed to scan and analyze an application's open-source dependencies for known vulnerabilities, offering a proactive approach to security. Dependency-Checker works by examining the libraries and components used in an application, cross-referencing them with extensive vulnerability databases, and providing comprehensive reports on potential security issues. By offering insights into these vulnerabilities, it enables developers to address and remediate them early in the software development lifecycle, reducing the risk of security breaches and enhancing the overall security posture of the application.
 
 [https://github.com/jeremylong/DependencyCheck](https://github.com/jeremylong/DependencyCheck)

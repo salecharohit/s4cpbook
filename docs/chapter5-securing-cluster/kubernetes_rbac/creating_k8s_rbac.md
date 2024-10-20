@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 5.2.2 Creating K8s RBAC
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=6019s)
+
 Now that we've learnt about Kubernetes RBAC let's get to create it
 
 ## 🛠️ Preparing Code for K8s IAM Roles

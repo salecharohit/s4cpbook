@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # 2.5.5 Destroying Environments
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3379s)
+
 Now that our demonstration for the multi-environment workflow is completed, let's destroy the EC2s that were created as its not something we need for the course ahead. We can do it be using the `admin` credentials configured earlier in our [AWS Setup](/docs/chapter0-the-setup/aws-setup.md) section.
 
 ## ↩️ Rebasing Git

@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 4.2.1 Golden Docker Images
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=5043s)
+
 Golden images are considered the ideal starting point for creating containers, ensuring consistency and reliability across various environments. By using golden Docker images, organizations can streamline the deployment process, reduce the risk of configuration errors, and maintain a standardized and efficient container infrastructure.
 
 They are also meticulously crafted and maintained to adhere to best practices, ensuring minimal vulnerabilities and a reduced attack surface. These trusted and immutable images simplify security auditing and compliance efforts, providing a secure foundation for containerized applications.

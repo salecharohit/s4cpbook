@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 5.2.1 RBAC in AWS EKS
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=6009s)
+
 In AWS EKS Authentication is managed via AWS IAM only through various identities i.e. either as a user or as an IAM Role.
 Authorization however is done by mapping the AWS IAM identity (user or IAM Role) with the existing Kubernetes RBAC using the Role and RoleBinding Kubernetes objects.
 

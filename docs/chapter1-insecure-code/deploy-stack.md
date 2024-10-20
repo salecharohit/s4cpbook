@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 1.1 Deploy Stack
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=775s)
+
 The below script will provision the entire AWS infrastructure including AWS EKS,AWS RDS,AWS Route53 and the application deployed as a Kubernetes Deployment along with the necessary ingress controller which is mapped to the hostname provided.
 
 Application doesn't have much functionality at present and all the vulnerable pieces of code are just dead code added on purpose , its not actually being executed.

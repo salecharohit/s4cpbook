@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # 5.2.3 Accessing Kubernetes
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=6219s)
+
 Let's now access kubernetes using CLI for both our users `goku` and `vegeta`
 
 ## 🔒 Accessing K8s - Goku

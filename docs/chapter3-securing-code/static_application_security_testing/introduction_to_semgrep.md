@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 3.1.1 Introduction to Semgrep
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3673s)
+
 [Semgrep](https://github.com/returntocorp/semgrep) is a powerful open-source static analysis tool that empowers developers and security professionals to efficiently identify and remediate security issues and code quality problems in their codebases. With user-friendly rules and customizable queries, Semgrep enables flexible and targeted scanning for vulnerabilities and misconfigurations, making it a valuable addition to any development or security workflow. In today’s digital landscape, automated source code scanning is essential for quickly detecting vulnerabilities, particularly injection threats and dangerous functions, thereby helping teams maintain the integrity and security of their software projects.
 
 💉 **Injection Vulnerabilities:**  

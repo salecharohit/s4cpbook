@@ -3,6 +3,8 @@ sidebar_position: 1
 ---
 # 5.5.1 EKS Default VPC CNI
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=6913s)
+
 The Default VPC CNI (Container Network Interface) in Amazon EKS is the networking solution used in EKS clusters running in the default Virtual Private Cloud (VPC). It integrates pods with the VPC, assigns IP addresses, manages security groups, and ensures efficient network performance, simplifying Kubernetes networking setup on AWS.
 This CNI plugin allows pods to communicate with each other within the VPC but doesn't enforce network policies out of the box. In other words,all traffic within the VPC is typically allowed by default, and NetworkPolicies won't take effect.
 So something like below wouldn't work in AWS EKS

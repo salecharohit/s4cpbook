@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 6.2.1 Introduction to OPA
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=7530s)
+
 Managing cloud infrastructure is a complex task, especially when it comes to ensuring security, compliance, and governance. As organizations adopt Infrastructure as Code (IaC) practices using Terraform, the need for effective policy enforcement becomes paramount. This is where the Open Policy Agent (OPA) comes into play.
 
 Open Policy Agent, often abbreviated as OPA, is an open-source, general-purpose policy engine that enables fine-grained, context-aware policy enforcement across the cloud-native stack. OPA was initially developed as a tool for policy enforcement in Kubernetes, but its versatility and flexibility have made it invaluable in various other domains, including cloud infrastructure management with Terraform.

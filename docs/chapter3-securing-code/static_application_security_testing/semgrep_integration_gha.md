@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # 3.1.2 Semgrep Integration with GHA
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=3706s)
+
 Now let's integrate semgrep with Github Actions and also look at how we can fix the issues that've been identified.
 
 ## ⌨️ Semgrep Command

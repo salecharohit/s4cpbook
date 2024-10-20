@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # 4.3.1 Container Security
 
+[Youtube 📺](https://www.youtube.com/watch?v=Am9417a87zU&t=5379s)
+
 Container image security is essential to protect applications and data in containerized environments. Here's why it's necessary:
 
 1. **Vulnerability Management:** Container images may include software vulnerabilities. Security is critical to identify, patch, and mitigate these vulnerabilities to prevent exploitation.
