@@ -141,4 +141,4 @@ aws iam delete-access-key --user-name <username> --access-key-id <access-key-id>
 
 ![](img/delete_iam_keys.png)
 
-**That's All Folks** please don't forget to show some 💖 love and [🐦 tweet](https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cpbook)
+**That's All Folks** please don't forget to show some 💖 love and [🐦 tweet](https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://www.rohitsalecha.com/s4cp/)
