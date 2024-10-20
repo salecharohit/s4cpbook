@@ -68,7 +68,7 @@ const config = {
         items: [
           { to: '/docs/intro', position: 'right', label: '📖 Docs' },
           {
-            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://github.com/salecharohit/s4cpbook", position: 'right', label: '❤️ Tweet'
+            to: "https://x.com/intent/tweet/?text=Secure%204C's%20of%20your%20Software%20Product%20!%20&url=https://www.rohitsalecha.com/s4cp/", position: 'right', label: '❤️ Tweet'
           },
           {
             to: 'https://github.com/salecharohit/s4cpbook',
