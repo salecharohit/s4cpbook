@@ -3,6 +3,6 @@
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Integrate static application security testing (SAST) and secrets scanning into the CI/CD pipeline using open-source tools like Semgrep, Dependency-Checker, and GitLeaks with GitHub Actions."
+    "description": "Integrate static application security testing (SAST) and secrets scanning into the CI/CD pipeline using open-source tools like Semgrep, Dependency-Checker, vet and GitLeaks with GitHub Actions."
   }
 }
