@@ -83,7 +83,9 @@ const config = {
           autoCollapseCategories: true,          
         },
       },      
-      metadata: [{ name: 'keywords', content: 'Product Security, Kubernetes Security, Docker Security, Cloud Native Security, Pentesting, DevSecOps, AWS IAM, AWS EKS Security, Kubernetes RBAC, Container Security, Open Source Security, Cloud Security, DevOps Security, Security Compliance, GitHub Actions Security, SAST, SCA, Compliance as Code, Secrets Management, OPA, Kyverno, Trivy, Gitleaks, AWS SCPs, Golden Containers, IRSA(IAM Roles Service Account), Dependency Checker,IMDSv2 enforcement', }],     
+      metadata: [{ name: 'keywords', content: 'Product Security, Kubernetes Security, Docker Security, Cloud Native Security, Pentesting, DevSecOps, AWS IAM, AWS EKS Security, Kubernetes RBAC, Container Security, Open Source Security, Cloud Security, DevOps Security, Security Compliance, GitHub Actions Security, SAST, SCA, Compliance as Code, Secrets Management, OPA, Kyverno, Trivy, Gitleaks, AWS SCPs, Golden Containers, IRSA(IAM Roles Service Account), Dependency Checker,IMDSv2 enforcement', },
+        {name: 'og:url', content: 'https://www.rohitsalecha.com/s4cp/'}
+      ],     
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
