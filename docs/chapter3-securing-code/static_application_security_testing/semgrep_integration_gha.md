@@ -72,6 +72,6 @@ View the PR comments as shown below especially that displaying the semgrep outpu
 
 ## 👁️ View Semgrep Artifact
 
-- Once the PR is merged Semgrep GHA will produce an artifact containing compelete semgrep output as shown below.
+- Once the PR is merged Semgrep GHA will produce an artifact containing complete semgrep output as shown below.
 
 ![](img/3A_9.png)
